@@ -1,0 +1,220 @@
+@media (min-width:992px) and (max-width:1200px) {
+    footer .innerf .buttons a {
+     padding: 10px 30px;   
+    }
+    .box1 .border .whitebg {
+        margin: 0 15px;
+    }
+	
+}
+
+
+@media (min-width:767px) and (max-width:991px) {
+    .box1 .border {
+        margin: 30px 40px;
+    }
+    .box3 .inner3 .cartoon {
+        text-align: center;
+    }
+    .box3 .inner3 .cartoon img{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+    .box5 .inner5 #slider .item {
+        width: 50%;
+    }
+    .box4 h1 {
+        font-size: 38px;
+    }
+    .box4 p {
+        font-size: 20px;
+    }
+    .box4 .student1 p {
+        font-size: 14px;
+    }
+    .box4 .student1 .face {
+        padding-top: 35px;
+    }
+    footer .innerf .buttons a {
+        padding: 10px 10px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        font-size: 12px;
+        padding: 2px 8px;
+    }
+    .box5 .inner5 #slider .item .commentbx .person img {
+        margin-top: -33px;
+    }
+    .box6 .inner6 .border6 {
+            min-height: 140px;
+    }
+    .box6 .inner6 .border6 .question {
+            padding: 30px 70px 65px;
+    }
+    .box6 .inner6 p {
+        font-size: 15px;
+    }
+    .box3 h1 {
+        font-size: 45px;
+    }
+    .box3 p {
+        font-size: 20px;
+    }
+    .box5 h1 {
+        font-size: 40px;
+    }
+    .box6 .inner6 h1 {
+        font-size: 40px;
+    padding-bottom: 40px;
+    }
+    .box2 {
+            padding-top: 0;
+    }
+    .box2 h1 {
+        padding-bottom: 30px;
+    }
+    .box6 .inner6 .border6 .ques img {
+        width: 64%;
+    }
+}
+@media (max-width:767px) {
+	.box1 .border .whitebg{
+    padding: 17px;
+	}
+	.box1 .border{
+    margin: 20px 8px;
+    float: left;
+	}
+	.box1 .border .fa {
+    font-size: 35px;
+	margin-top: 10px;
+	}
+	.box1 .border h1 {
+    font-size: 26px;
+	}
+	
+	.noleft {
+		padding-left: 0;
+	}
+	.noright {
+		padding-right: 0;
+	}
+
+    .box2 {
+        text-align: center;
+    }
+    .box3 h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .box3 p {
+        font-size: 15px;
+    }
+    .box4 h1 {
+        font-size: 25px;
+    }
+    .box4 p {
+        font-size: 15px;
+    }
+    .box4 .quote img {
+        width: 30%;
+    }
+    .box4 .student1 p {
+            font-size: 13px;
+    }
+    .box4 .bluequote img {
+            width: 35%;
+    }
+    .box5 h1 {
+        font-size: 25px;
+    }
+    .box5 .inner5 #slider .item .commentbx .person img {
+        margin-top: -33px;
+    }
+    .box6 .inner6 h1 {
+            font-size: 25px;
+            padding-bottom: 25px;
+    }
+    .box6 .inner6 .border6 {
+        min-height: 150px;
+    }
+    .box6 .inner6 .border6 .question {
+            padding: 30px 70px 57px;
+    }
+    footer h1 {
+        font-size: 25px;
+    line-height: 30px;
+    }
+    footer .innerf .buttons {
+        padding: 12px;
+    }
+    .box2 h1 {
+        font-size: 25px;
+        margin-top: 0px;
+        padding-bottom: 25px;
+    }
+    .box1 {
+        padding: 30px 0 0px;
+    }
+    .box2 .bgcolor .innerbox h2 {
+            padding-top: 12px;
+            text-align: center;
+            width: 100%;
+    }
+    .box6 .inner6 p {
+        font-size: 15px;
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #fff;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #ff871c;
+    }
+    .navbar-toggle {
+        margin-top: 15px;
+        margin-right: 10px;
+
+    }
+    .box6 .inner6 .border6 .ques img {
+        margin: 0 auto;
+    }
+    .box6 .inner6 .border6 img {
+        margin: 0 auto;
+    }
+    .box3 .inner3 .cartoon img{
+        margin: 0 auto;
+    }
+    
+}
+@media (min-width:525px) and (max-width:766px) {
+    .box1 .border {
+        
+    }
+}
+@media (max-width:525px) {
+    .box1 .border {
+        
+    }
+}
+
+@media (max-width:320px) {
+    .box1 .border {
+        
+    }
+		.box1 .border .whitebg{
+    padding: 10px;
+	}
+	.box1 .border{
+    margin: 20px 5px;
+    float: left;
+	}
+	.box1 .border .fa {
+    font-size: 35px;
+	margin-top: 10px;
+	}
+	.box1 .border h1 {
+    font-size: 26px;
+	}
+	
+}
