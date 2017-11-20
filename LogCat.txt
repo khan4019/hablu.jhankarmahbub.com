@@ -1,1 +1,1 @@
-Changes some css style, GirdBox mobile view, chapter added, chapter hover, slider,
+LogCat: Changes some css style, GirdBox mobile view, chapter added, chapter hover, slider,
