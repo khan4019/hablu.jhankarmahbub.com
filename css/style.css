@@ -124,7 +124,7 @@ header {
     float: left;
     width: 100%;
     background-color: #fbfbfb;
-    box-shadow: 0px 2px 0px #888, 0px -2px 0px #888;
+    box-shadow: 0px 2px 0px #e5dede, 0px -2px 0px #e5dede;
     padding: 10px 0;
 }
 .box3 h1 {
@@ -136,7 +136,7 @@ header {
     background-color: #f4f4f4;
     line-height: 70px;
     margin-top: 10px;
-    padding-top: 10px;
+    padding-top: 8px;
     font-weight: bold;
 }
 .box3 p {
@@ -314,7 +314,7 @@ footer h2 {
 footer .innerf {
     float: left;
     width: 100%;
-    background: url('../img/bottom.PNG')no-repeat center center;
+    background: url('../img/bottom.jpg')no-repeat center center;
     padding: 30px;
 }
 footer .innerf .btn1 {
