@@ -97,6 +97,8 @@ header {
 
 .box2 .bgcolor .innerbox:hover{
     border-top: 3px solid #43a4ef;
+	background: #f8f8f8;
+	box-shadow: 0px 5px 10px #e0d7d7;
 }
 	
 .box2 .bgcolor .innerbox h2 {

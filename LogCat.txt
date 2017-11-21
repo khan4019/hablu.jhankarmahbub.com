@@ -11,3 +11,5 @@ Commit: chapterBox perfect padding set
 cssClass: .box2 .bgcolor
 margin-bottom: 15px;
 ========================
+Commit: Perfect hover chapter box
+cssClass: .box2 .bgcolor .innerbox:hover
