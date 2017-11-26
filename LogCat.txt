@@ -15,3 +15,7 @@ Commit: Perfect hover chapter box
 cssClass: .box2 .bgcolor .innerbox:hover
 
 ========================
+Commit: Footer upddated, 
+and fix Style habluder kichu montobbo,
+
+========================

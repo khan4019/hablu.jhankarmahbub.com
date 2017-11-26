@@ -239,11 +239,10 @@ header {
 .box5 h1 {
     font-size: 40px;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
     padding: 12px 0px 8px 0px;
-    width: 100%;
     margin-top: 0;
-    box-shadow: 0 0 10px #dcdcd9;
 }
 
 .slick-dots li button:before {
@@ -309,7 +308,7 @@ footer h1 {
     line-height: 45px;
 }
 footer h2 {
-    font-size: 10px;
+    font-size: 15px;
 }
 footer .innerf {
     float: left;
@@ -335,4 +334,24 @@ footer .innerf .buttons a {
 footer .innerf .buttons a:hover {
     background-color: #fff;
     color: #015282;
+}
+
+.footer {
+    background: #022242;
+    color: #fff;
+    padding: 10px 0;
+	margin-top: 5px;
+}
+.footer .copyright {
+    line-height: 1.6;
+    color: #a1aab4;
+    font-size: 14px;
+}
+
+.footer .fa-heart {
+    color: #fb866a;
+}
+
+.footer a {
+    color: #fb866a;
 }
