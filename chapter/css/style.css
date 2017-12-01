@@ -314,13 +314,13 @@ footer {
 }
 footer .social .fa {
     font-size: 20px;
-    border: 1px solid #fff;
+    border: 1px solid #cccccc;
     height: 35px;
     width: 40px;
     border-radius: 4px;
     padding-top: 7px;
     margin: 5px;
-    color: #fff;
+    color: #cccccc;
     transition: all 0.3s ease-in;
 }
 footer .social .fa:hover {
