@@ -1,0 +1,339 @@
+@font-face{
+    font-family:"kalpurush";
+    src:url('../fonts/kalpurush.ttf');
+}
+@font-face{
+    font-family:"SiyamRupali-ANSI";
+    src:url('../fonts/Siyam Rupali ANSI.ttf');
+}
+@font-face{
+    font-family:"SULEKHA";
+    src:url('../fonts/SULEKHA.TTF');
+}
+@font-face{
+    font-family:"TimesNewRoman";
+    src:url('../fonts/times new roman.ttf');
+}
+@font-face{
+    font-family:"OpenSans-Regular";
+    src:url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face{
+    font-family:"Georgia";
+    src:url('../fonts/Georgia.ttf');
+}
+* {
+    outline: none;
+}
+.noleft {
+    padding-left: 0;
+}
+.noright {
+    padding-right: 0;
+}
+.nopadding {
+    padding: 0;
+}
+.heading {
+    float: left;
+    width: 100%;
+    font-family: "Lucida Bright", Georgia, serif;
+    font-size: 23px;
+    color: #fff;
+    background-color: #69a9cd;
+    -webkit-box-shadow: 0 5px 1px -4px black;
+    -moz-box-shadow: 0 5px 1px -4px black;
+    box-shadow: 0 5px 1px -4px black;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.mb0 {
+    margin-bottom: 0;
+}
+header {
+    background-color: #efefef;
+    border-bottom: 2px solid #79b0c4;
+}
+.navbar-default {
+    background-color: #efefef;
+    border: none;
+    margin-bottom: 16px;
+}
+header .navbar-nav>li {
+    border-left: 2px solid #bdbdbd;
+}
+header .navbar-nav>li:first-child {
+    border: none;
+}
+.navbar-nav>li>a {
+    color: #777!important;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2px 15px;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fd954e!important;
+    transition: all 0.3s ease-in;
+}
+.navbar-right {
+    padding: 20px 0 0 0;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    padding: 5px 0;
+}
+.banner img {
+    margin: 0 auto;
+}
+
+.section1 {
+    float: left;
+    width: 100%;
+    background-color: #efefef;
+    padding: 40px 0;
+}
+.section1 .insec {
+    float: left;
+    width: 100%;
+    padding: 0 40px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.section1 .insec h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: #45a0d4;
+    font-family: SiyamRupali-ANSI;
+    border-bottom: 3px double #ddd;
+    margin: 15px 50px;
+    padding: 20px 0 10px;
+}
+.section1 .insec p {
+    font-family: Sulekha Shefalee;
+    font-size: 22px;
+    color: #8c8c8c;
+    line-height: 23px;
+}
+.section1 .insec h2 {
+    font-size: 28px;
+    font-family: Sulekha Shefalee;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #7f7f78;
+    margin-top: 18px;
+}
+.section1 .insec h3 {
+    font-size: 23px;
+    font-family: Sulekha Shefalee; 
+    color: #8c8c8c;
+
+}
+.section1 .insec ul {
+    padding-left: 70px;
+}
+.section1 .insec ul li {
+    list-style: none;
+    font-family: Sulekha Shefalee; 
+    color: #a4a4a0;
+    font-size: 22px;
+    line-height: 22px;
+}
+.section1 .insec ul li span {
+    font-weight: 600;
+    padding-right: 10px;
+}
+.section1 .insec .hand img {
+
+}
+.section1 .blacknwhite {
+    padding-bottom: 10px;
+}
+.section1 .insec .instruct a:hover, .section1 .insec .instruct a:focus {
+    text-decoration: none;
+}
+.section1 .insec .instruct h1 {
+    text-align: left;
+    font-size: 18px;
+    font-family: SiyamRupali-ANSI;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.section1 .insec .instruct {
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+}
+.section1 .nav1 a {
+    border: 2px dotted #d6d6d6;
+    padding: 10px;
+    display: inline-block;
+    color: #6c787b;
+    font-family: SiyamRupali-ANSI;
+    font-size: 16px;
+    transition: all 0.3s ease-in;
+}
+.section1 .nav1 a:hover {
+    text-decoration: none;
+    background-color: #69a9cd;
+    color: #f3f1f1;
+    transition: all 0.3s ease-in;
+}
+.section1 .nav1 .prev a span {
+    padding-right: 10px;
+}
+.section1 .nav1 .next a span {
+    padding-left: 10px;
+}
+.section1 .nav1 .next {
+    float: right;
+}
+.section1 .nav1 h6 {
+    text-align: center;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 13px;
+    color: #7f7f78;
+}
+.section1 .chapter {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+}
+.section1 .chapter .list1 {
+    width: 100%;
+    float: left;
+}
+.section1 .chapter ul {
+    float: left;
+    width: 100%;
+    padding-left: 0;
+}
+.section1 .chapter ul li {
+    list-style: none;
+    padding: 7px 0;
+}
+.section1 .chapter ul li:first-child {
+    padding-top: 20px;
+}
+.section1 .chapter ul li a {
+   
+    font-size: 16px;
+    color: #8c8c8c;
+
+}
+.section1 .chapter a:hover, .section1 .chapter a:focus {
+    text-decoration: none;
+    color: #fd954e; 
+}
+
+.section1 .chapter ul li span {
+        padding-right: 18px;
+    font-size: 15px;
+}
+.section1 .subscribe {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 15px 0;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+.section1 .subscribe h1 {
+    font-family: TimesNewRoman;
+}
+.section1 .subscribe .input-group {
+    width: 100%;
+}
+.section1 .subscribe .input-group input {
+    height: 45px;
+    font-size: 14px;
+    font-family: OpenSans-Regular;
+    border-color: #edefef;
+}
+.section1 .subscribe .submit a {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    color: #6e797d;
+    background-color: #e1e1e1;
+    padding: 10px 0;
+    margin-top: 10px;
+    font-family: TimesNewRoman;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+}
+.section1 .subscribe .submit a:hover {
+    text-decoration: none;
+    background-color: #69a9cd;
+    color: #e5e3e3;
+    transition: all 0.3s ease-in;
+}
+.section1 .subscribe .fbpage {
+    float: left;
+    width: 100%;
+    padding: 10px 0 0;
+}
+.section1 .rightb {
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+.section1 .rightb h1 {
+    margin-top: 0;
+}
+.section1 .rightb .book3 {
+    margin: 0 auto;
+}
+.section1 .rightb .buy {
+    position: relative;
+    bottom: 80px;
+    display: block;
+    margin: 0 auto;
+}
+.section1 .nav1 {
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+}
+footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color: #272424;
+}
+footer .social .fa {
+    font-size: 20px;
+    border: 1px solid #fff;
+    height: 35px;
+    width: 40px;
+    border-radius: 4px;
+    padding-top: 7px;
+    margin: 5px;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+footer .social .fa:hover {
+    background-color: #fff;
+    color: #272424;
+    transition: all 0.3s ease-in;
+}
+footer p {
+    color: #cccccc;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.fbpage .fb_iframe_widget_fluid span {
+    margin: 0 auto !important;
+    display: block !important;
+}

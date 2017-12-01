@@ -19,3 +19,6 @@ Commit: Footer upddated,
 and fix Style habluder kichu montobbo,
 
 ========================
+Commit: Chapter added v.1
+
+========================
