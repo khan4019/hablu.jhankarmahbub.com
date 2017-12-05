@@ -112,14 +112,14 @@ header .navbar-nav>li:first-child {
     padding: 20px 0 10px;
 }
 .section1 .insec p {
-    font-family: Sulekha Shefalee;
+    font-family: kalpurush;
     font-size: 22px;
-    color: #8c8c8c;
-    line-height: 23px;
+    color: #7f7f78;
+    line-height: 25px;
 }
 .section1 .insec h2 {
-    font-size: 28px;
-    font-family: Sulekha Shefalee;
+    font-size: 23px;
+    font-family: kalpurush;
     font-weight: 600;
     margin-bottom: 8px;
     color: #7f7f78;
@@ -127,8 +127,8 @@ header .navbar-nav>li:first-child {
 }
 .section1 .insec h3 {
     font-size: 23px;
-    font-family: Sulekha Shefalee; 
-    color: #8c8c8c;
+    font-family: kalpurush; 
+    color: #7f7f78;
 
 }
 .section1 .insec ul {
@@ -136,10 +136,10 @@ header .navbar-nav>li:first-child {
 }
 .section1 .insec ul li {
     list-style: none;
-    font-family: Sulekha Shefalee; 
-    color: #a4a4a0;
-    font-size: 22px;
-    line-height: 22px;
+    font-family: kalpurush; 
+    color: #7f7f78;
+    font-size: 23px;
+    line-height: 25px;
 }
 .section1 .insec ul li span {
     font-weight: 600;
@@ -156,8 +156,8 @@ header .navbar-nav>li:first-child {
 }
 .section1 .insec .instruct h1 {
     text-align: left;
-    font-size: 18px;
-    font-family: SiyamRupali-ANSI;
+    font-size: 22px;
+    font-family: kalpurush;
     margin: 0;
     padding: 0;
     border: none;
@@ -216,10 +216,14 @@ header .navbar-nav>li:first-child {
 }
 .section1 .chapter ul li {
     list-style: none;
-    padding: 7px 0;
+    padding: 10px 1px;
+    border-bottom: 1px solid #ddd;
 }
 .section1 .chapter ul li:first-child {
     padding-top: 20px;
+}
+.section1 .chapter ul li:last-child {
+    border: none;
 }
 .section1 .chapter ul li a {
    
