@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="css/xcode.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link rel="stylesheet" href="">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.PNG">
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">home</a>
+                            </li>
+                            <li>
+                                <a href="#">tips a></li>
+                            <li>
+                                <a href="#">web</a>
+                            </li>
+                            <li>
+                                <a href="#">guru</a>
+                            </li>
+                            <li>
+                                <a href="#">dream job</a>
+                            </li>
+                            <li>
+                                <a href="#">e-books</a>
+                            </li>
+                            <li>
+                                <a href="#">about me</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="img/banner.png" class="img-responsive">
+    </div>
+
+    <div class="section1">
+        <div class="container nopadding">
+            <div class="col-md-8">
+                <div class="insec">
+                    <h1>বিস্কুটের array খায় বিড়ালছানা </h1>
+                    <p>এক প্যাকেট বিস্কুট নিয়ে এসেছে রাশেদ। বিস্কুটের প্যাকেট খুলেই অন্তুকে বলল-</p>
+
+                    <h2>একের ভিতরে অনেক </h2>
+                    <p>এক প্যাকেট বিস্কুটের ভিতরে অনেকগুলা বিস্কুট আছে। এই বিস্কুটগুলাকে একসাথে বলতে পারস, বিস্কুটের সমষ্টি।
+                        অর্থাৎ এক প্যাকেট বিস্কুট হচ্ছে অনেকগুলা বিস্কুটের সমষ্টি। তবে দোকানে গিয়ে তুই বিস্কুটের সমষ্টি চাস
+                        না; বরং এক প্যাকেট বিস্কুট চাস। এক প্যাকেট বললে সবাই বুঝে ফেলে, একটা প্যাকেটের ভিতরে অনেকগুলা জিনিস
+                        থাকবে। একইভাবে এক হালি ডিম চাইলে, চারটা ডিম দিবে। এক ডজন কমলা চাইলে, 12 টা কমলা দিবে। তার মানে এক
+                        হালি হচ্ছে চারটি জিনিসের সমষ্টি আর এক ডজন হচ্ছে 12 টি জিনিসের সমষ্টি। </p>
+                    <p>অনেকগুলা জিনিসের সমষ্টিকে প্রোগ্রামিংয়ের ভাষায় collection বা list বা array বলে। collection বলতে সমষ্টি
+                        বুঝায়, মানে অনেকগুলা জিনিসের একটা সমষ্টি। list শব্দের মানে তালিকা। যেমন— বাজার করার লিস্ট। এই বাজার
+                        করার লিস্টে অনেকগুলা আইটেম থাকে, যেগুলা বাজার থেকে আনতে হবে। তাই লিস্ট হচ্ছে অনেকগুলা আইটেমের তালিকা।
+                        আর arrayর মানে হচ্ছে সারি। </p>
+
+                    <h2> ফেলে আসা স্কুলের দিনগুলা</h2>
+                    <p>পিচ্চিকালে স্কুলে ক্লাস শুরু হওয়ার আগে অ্যাসেম্বলি করা লাগত। সেখানে প্রতিটি ক্লাসের স্টুডেন্টদের আলাদা
+                        লাইন করে দাঁড়া করিয়ে রাখত। এক একটা ক্লাসের এক একটা লাইনকে বলতে পারস, ওই ক্লাসের স্টুডেন্টদের array
+                        বা সারি। অ্যাসেম্বলির সময় শরীরচর্চার শিক্ষক যদি বলতেন, ‘দশম শ্রেণির লাইনের প্রথম জন সামনে আসো, শপথ
+                        করাতে’ তাহলে সবাই বুঝতে পারত কোন লাইন থেকে কে সামনে যাবে। একইভাবে যদি বলতেন— ‘অষ্টম শ্রেণির লাইনের
+                        প্রথম তিনজন সামনে আসো, সমবেত গলায় জাতীয় সঙ্গীত গাইতে’। তাহলে সহজেই বলে দিতে পারা যায়, কারা কারা যাবে
+                        জাতীয় সঙ্গীত গাইতে। </p>
+
+                    <div class="blacknwhite">
+                        <img src="img/school-assembly.jpg" class="img-responsive">
+                    </div>
+                    <p>প্রতিটি ক্লাসের স্টুডেন্টদের আলাদা আলাদা লাইনে দাঁড়া করানোর অনেক সুবিধা আছে। যেমন, দশম শ্রেণির লাইনের
+                        প্রথম বা দ্বিতীয় বা শেষজনকে খুব সহজেই খুঁজে বের করতে পারবি। আবার দশম শ্রেণির কতজন স্টুডেন্ট উপস্থিত
+                        আছে, সেটাও সহজে গুনতে পারবি। আরও মজার বিষয় হচ্ছে, চাইলে দশম শ্রেণির সবাইকে দিয়ে কিছু করানো যায়। যেমন,
+                        দশম শ্রেণির সবাই আরামে দাঁড়াও, সোজা হও, মার্চ করতে করতে সামনে এগিয়ে যাও। </p>
+
+                    <h2>ধীরে ধীরে array</h2>
+
+                    <p>একটা arrayর মধ্যে একই টাইপের অনেকগুলা জিনিস থাকে। বিস্কুটের arrayর মধ্যে অনেকগুলা বিস্কুট থাকে। ডিমের
+                        arrayর মধ্যে অনেকগুলা ডিম থাকে। কমলার arrayর মধ্যে অনেকগুলা কমলা থাকে। </p>
+                    <p>array বা list যা-ই বলস না কেন এরা কিন্তু এক ধরনের ভ্যারিয়েবল। তুই চাইলে তোর arrayর মধ্যে পাঁচটা জিনিস
+                        রাখতে পারস, আবার দশটা বা বিশটা জিনিসও রাখতে পারস। যেহেতু array এক ধরনের ভ্যারিয়েবল, সেহেতু arrayর
+                        একটা নাম থাকবে এবং সমান চিহ্ন দিয়ে তার মান সেট করতে পারবি। arrayর মান সেট করার সময়, arrayর সবগুলা
+                        উপাদানকে থার্ড ব্র্যাকেটের ([ ]) মধ্যে রাখতে হয়। প্রতিটি উপাদানের পরে একটা করে কমা দিতে হয়। অর্থাৎ
+                        কমা দিয়ে একটা উপাদান থেকে আরেকটা উপাদানকে আলাদা করা হয়। </p>
+                    <p>এখন কোনো একজন ক্রিকেট খেলোয়াড়ের সর্বশেষ পাঁচ ইনিংসের রান নিয়ে একটা array ডিক্লেয়ার করতে চাইলে, প্রথমেই
+                        arrayর একটা নাম দিবি। যেহেতু কোনো একজন ব্যাটসমানের রান নিয়ে array, সেহেতু arrayর নাম দিলি রানস (runs)
+                        এবং সমান চিহ্ন দিয়ে এটার মান সেট করলি। arrayর নাম প্রথমবার লিখার সময় array টাকে ডিক্লেয়ার করা লাগবে।
+                        ডিক্লেয়ার করার জন্য arrayর নামের আগে var লিখবি।</p>
+
+                    <p style="color:#5b5956;">var runs = [ 37, 12, 83, 14, 125 ]; </p>
+                    <p>একইভাবে তোর ক্লাসের সাতজন ফ্রেন্ডের বয়সের একটা array ডিক্লেয়ার করতে চাইলে সেটারও একটা নাম দিবি। সমান
+                        চিহ্ন দিয়ে থার্ড ব্র্যাকেটের ভিতরে সব ফ্রেন্ডের বয়স লিখবি। আর যেকোনো দুইটা বয়সের মধ্যে কমা দিবি।
+                        তাহলে সেই array-টা দেখতে নিচের মতো হবে-</p>
+
+                    <p style="color:#5b5956;">var friendsAge = [16, 14, 15, 17, 14, 13, 15]; </p>
+
+                    <h2>বন্ধুর বাহার</h2>
+                    <p>একই সিস্টেমে, তুই তোর চারজন ক্লোজ ফ্রেন্ডের নাম নিয়ে আরেকটা array লিখতে পারবি। খালি থার্ড ব্র্যাকেটের
+                        ভিতরে কমা দিয়ে ফ্রেন্ডদের নাম লিখবি। একটা জিনিস খেয়াল রাখতে হবে, নামগুলা যেহেতু এক একটা শব্দ বা বর্ণের
+                        সমষ্টি, তাই নামগুলা ডাবল কোটেশনের মধ্যে রাখতে হবে। </p>
+
+                    <p style="color:#5b5956;">var friends = ["olil", "kholil", "molil", "jolil" ] ;</p>
+
+
+                    <p>প্রোগ্রামিং করার জন্য www.jhankarmahbub.com/console-এ গিয়ে ওপরের array-টা টাইপ কর। তারপর Run বাটনে চাপ
+                        দে। এখন তোর friends নামক arrayতে কয়জন ফ্রেন্ড জানতে চাইলে array-টার নাম লিখে, তারপর .length অর্থাৎ
+                        একটা ডট(.) দিয়ে তারপর length লিখে Run বাটনে চাপ দিবি।</p>
+
+                    <p>friends.length; </p>
+                    <p>দেখবি নিচে আউটপুট দেখাচ্ছে 4 অর্থাৎ friends নামক array-তে চারজন ফ্রেন্ড আছে। </p>
+
+
+                    <h2> সুন্দরী বন্ধু </h2>
+                    <p>ধর, তোর আগের প্রেমে ছাড়াছাড়ি হয়ে গেছে। তাই ডলি নামের একজনের সাথে লাইন মারার চেষ্টা করতেছস। কিন্তু সুবিধা
+                        করে উঠতে পারতেছস না। তাই ভাবলি আগে ডলির সাথে ফ্রেন্ডশিপ করে নিবি, তারপর সময়-সুযোগ বুঝে মনের কথা বলে
+                        দিবি। এখন ডলিকে তোর ফ্রেন্ড লিস্টে যোগ করতে চাইলে অর্থাৎ কোনো arrayর মধ্যে নতুন একটা উপাদান যোগ করতে
+                        চাইলে, জাস্ট arrayর নামের পরে .push লিখে প্রথম ব্র্যাকেটের মধ্যে যে উপাদানকে পুশ করবি সেটা লিখবি।
+                        অর্থাৎ একটা ডট (.) তারপর push লিখে প্রথম ব্র্যাকেটের ভিতরে নতুন ফ্রেন্ডের নাম লিখতে হবে। </p>
+
+                    <pre><code>var friends = ["olil", "kholil", "molil", "jolil" ] ;
+friends.push("dolly");</code></pre>
+                    <p>কোনো উপাদান arrayর মধ্যে push করলে সেটা arrayর সর্বশেষ উপাদান হিসেবে যোগ হয়ে যায়। একটু আগে ডলিকে তোর
+                        ফ্রেন্ড লিস্টে যোগ করছস। এখন তুই চাইলে ফ্রেন্ডস arrayর মধ্যে কে কে আছে জানার জন্য console.log(friends);
+                        করে দে। তখন আউটপুট হিসেবে ["olil", "kholil", "molil", "jolil", "dolly"] দেখাবে। </p>
+
+                    <h2>বন্ধু বেইমান</h2>
+                    <p>ধর, কয়দিন পরে dollyর সাথেও বনিবনা হচ্ছে না। সে তোর কোনো মেসেজের রিপ্লাই দেয় না। তুই তাকে ফ্রেন্ড লিস্ট
+                        থেকে বের করে দিতে চাস। খুবই সোজা, জাস্ট arrayর নাম লিখে তারপরে ডট (.) দিয়ে pop() লিখে দিবি। তাহলে
+                        তোর arrayর মধ্যে সবার শেষে যে আছে তাকে বের করে দেওয়া হবে।</p>
+                    <pre><code>var friends ["olil", "kholil", "molil", "jolil", "dolly"];
+friends.pop();</code></pre>
+                    <p>এখন friends.length দেখতে চাইলে আউটপুট হিসেবে 4 দেখবি। তার মানে তোর friends নামক arrayর মধ্যে চারজন ফ্রেন্ড
+                        আছে। কারণ তুই একজনকে বের করে দিছস। তুই চাইলে console.log(friends) লিখে যে কজন ফ্রেন্ড আছে, তাদের
+                        নাম দেখতে পারবি।</p>
+
+                    <h2>ওরে কে কোথায় আছিস </h2>
+                    <p>মনে আছে, অ্যাসেম্বলি করার সময় টিচার চাইলে লাইনের প্রথম বা দ্বিতীয় জনকে সামনে ডেকে নিতে পারতেন, শপথ করাতে।
+                        এখন তুই চাইলে, তোর arrayর মধ্যে প্রথমে কে আছে, দ্বিতীয়তে কে আছে জানতে পারবি। খুবই সিম্পল। জাস্ট arrayর
+                        নামটা লিখবি, তারপর থার্ড ব্র্যাকেটের মধ্যে কোনো একটা সংখ্যা লিখবি। যে সংখ্যাটা লিখবি, সেটা হচ্ছে,
+                        arrayর কোন পজিশনের বা অবস্থানের উপাদান দেখতে চাস তার মান। </p>
+
+                    <p>arrayর ক্ষেত্রে একটা জিনিস খুব ভালোভাবে খেয়াল রাখবি, সেটা হলো arrayর ফার্স্ট পজিশনের মান শুরু হয় শূন্য
+                        (0) দিয়ে। এখন arrayর মধ্যে প্রথম ফ্রেন্ডকে খুঁজে বের করার জন্য friends[0] লিখলে অলিলকে পাবি। কারণ
+                        arrayর মধ্যে প্রথম পজিশনে আছে অলিল। তারপর friends[1] লিখলে পাবি খলিল। friends[2] লিখলে পাবি মলিল।
+                        শুধু পড়ে গেলেই হবে? যা একটু-আধটু প্রোগ্রামিং প্র্যাকটিস করে দ্যাখ। মজা পাবি।
+                    </p>
+
+                    <h2>
+                        পাল্টে দিব বন্ধুত্ব
+                    </h2>
+                    <p>যদিও ডলির সাথে তোর যোগাযোগ নাই, তার পরও তাকে নিয়ে বাজে মন্তব্য করলে তোর খারাপ লাগতেই পারে। শত হইলেও সে
+                        তোর হবু লিস্টে ছিল। ধর, মলিল ডলি সম্পর্কে বাজে মন্তব্য করেছে। তাই মলিলকে তোর ফ্রেন্ড লিস্টে রাখতে
+                        চাইছস না। </p>
+                    <p>arrayর যেকোনো পজিশনের উপাদানকে পরিবর্তন করা খুবই সোজা। জাস্ট array-র নাম লিখে, থার্ড ব্র্যাকেটের মধ্যে
+                        সেই উপাদানের পজিশন লিখে, সমান চিহ্ন দিয়ে, নতুন মান সেট করে দিবি। ব্যস, উপাদান পরিবর্তন হয়ে যাবে।
+                        ধর, তুই জানস মলিল friends[2] পজিশনে আছে। তুই চাইলে সেখানে মলিলের পরিবর্তে কলিকে সেট করে দিতে পারস।
+                        জাস্ট নিচের মতো করে লিখবি। </p>
+                    <p>friends[2] = "koly";
+                        <br> ব্যস মলিল বাতিল হয়ে যাবে। তোর friends নামক arrayর মধ্যে কে কে আছে দেখার জন্য www.jhankarmahbub.com/console-এ
+                        গিয়ে console.log(friends) লিখে Run বাটনে চাপ দে। পুরা arrayটা আউটপুট দিয়ে দিবে। একইভাবে friends[1]
+                        = ‘molly”; লিখে তুই তোর friends নামক arrayর দ্বিতীয় উপাদানকে পরিবর্তন করে molly-কে বসাতে পারবি।
+                    </p>
+
+
+                    <h2>পালাবি কোথায়</h2>
+
+                    <p>যেকোনো arrayর মধ্যে কোনো একটা উপাদান খুঁজে বের করা খুবই সোজা। জাস্ট arrayর নাম লিখে ডট (.) দিয়ে indexOf
+                        লিখবি। তারপর প্রথম ব্র্যাকেটের ভিতরে যে জিনিসটার পজিশন জানতে চাস, সেটা দিয়ে দিবি। তোর ফ্রেন্ডস arrayর
+                        মধ্যে জলিলের পজিশন জানার জন্য নিচের মতো করে লিখবি। </p>
+                    <pre><code>var friends = ["olil", "kholil", "molil", "jolil", "dolly"];
+friends.indexOf("jolil");</code></pre>
+                    <p>তখন আউটপুট হিসেবে বলে দিবে jolil তোর friends এর মধ্যে 3 নম্বর পজিশনে আছে। এইখানে indexOf-এর মধ্যে দুইটা
+                        ইংরেজি শব্দ আছে। একটা হচ্ছে index, আরেকটা হচ্ছে Of এবং index বলতে সূচক বা পজিশন বা অবস্থান বুঝায়।
+                        তাই indexOf বলতে পজিশন কত জানতে চাওয়া হয়। আর friends.indexOf("jolil") লিখে friends নামক arrayর মধ্যে
+                        জলিলের পজিশন কত জানতে চাওয়া হয়। </p>
+                    <p>এখন তুই দুইটা জিনিস শিখে ফেলছস। তোকে যদি জিজ্ঞেস করা হয়, তোর friends নামক arrayর 3 পজিশনে কে আছে। তুই
+                        array নাম লিখে থার্ড ব্র্যাকেটের মধ্যে পজিশন লিখে দিবি। অর্থাৎ friends[3] লিখবি। আর উল্টাটা জিজ্ঞেস
+                        করলে। অর্থাৎ উপাদান বলে দিয়ে জিজ্ঞেস করল, পজিশন কত? তখন indexOf ব্যবহার করে friends.indexOf("jolil")
+                        লিখবি।
+                    </p>
+                    <h2>সিরিয়াল করে দাঁড়া </h2>
+                    <p>ছোট থেকে বড় ক্রমানুসারে সাজানোকে ইংরেজিতে বলে sort করা। ধর, তোর friendsAge নামক arrayর মধ্যে যেসব ফ্রেন্ডের
+                        বয়স আছে তাদের বয়সের ক্রমানুসারে সাজাতে চাস। সে জন্য arrayর নাম লিখে ডট (.) চিহ্ন দিয়ে sort() লিখবি।
+                        তাইলে তোর সব ফ্রেন্ড বয়স অনুসারে ছোট থেকে বড় সিরিয়াল ধরে লাইনে দাঁড়িয়ে যাবে। </p>
+                    <pre><code>var friendsAge = [16, 14, 15, 17, 14, 13, 15];
+friendsAge.sort();</code></pre>
+                    <p>আউটপুট হিসেবে [13, 14, 14, 15, 15, 16, 17] দেখাবে। একই পদ্ধতিতে তোর firends নামক arrayর সব উপাদানকেও
+                        ক্রম অনুসারে সাজাতে পারবি। জাস্ট friends.sort() লিখবি।</p>
+
+                    <h2>টয়লেটের রিভার্স লাইন </h2>
+                    <p>তোর স্কুলের টয়লেটের লাইনে ধাক্কাধাক্কি করে কিছু পোলাপান লাইনের সামনে চলে গেছে। টিচার এই মারামারি দেখে
+                        ধমক দিয়ে বলল, সবার প্রথমে যে আছস, সে সবার শেষে যাবি। আর সবার শেষে যে আছস, সে সবার আগে দাঁড়াবি। ধর,
+                        তোর টয়লেট লাইন (toiletLine) নামক arrayতে সবার আগে আছে কদম, তারপর বেগুন, তারপর টমেটো এবং সবার শেষে
+                        আছে ফুলকপি। এই arrayটাকে রিভার্স করলে, ফুলকপি সবার আগে চলে যাবে, তারপর টমেটো, তারপরে বেগুন এবং সবার
+                        শেষে যাবে কদম। এইভাবে যে যেখানে আছে তার পজিশন রিভার্স বা উল্টা করা হচ্ছে। এখন কোন array-কে রিভার্স
+                        করার জন্য জাস্ট arrayর নাম লিখে ডট (.) দিয়ে reverse() লিখে দিবি। </p>
+                    <p>var toiletLine = ["kodom", "Begun", "Tomato", "Fulcopy"];
+                        <br> toiletLine.reverse();
+                    </p>
+                    <p>
+                        তখন আউটপুট হিসেবে ["Fulcopy", "Tomato", "Begun", "kodom"] দেখাবে। একইভাবে তোর friendsAge নামক arrayর মধ্যে ফ্রেন্ডদের বয়সগুলোকেও
+                        উল্টা করতে পারবি। নিচের মতো করে-
+                        <pre><code>var friendsAge = [16, 14, 15, 17, 14, 13, 15];
+friendsAge.reverse();</code></pre>
+
+                        <h2>হাবলু ভাইরে ভোট দিন</h2>
+                        <p>ধর, তুই বদনা মার্কা নিয়ে নির্বাচনে দাঁড়ায় গেলি। টাকা খরচ করে হাজার হাজার লোক ভাড়া করে আনছস তোর জন্য
+                            মিছিল করতে। যাকে দিয়ে মিছিলের লোক জোগাড় করছস, সে বিশাল সাইজের একটা বদনা মাথায় নিয়ে তোর কাছে এসে
+                            বলল,‘আপনি কি জানেন, মিছিল এক ধরনের array বা সারি? আপনি যদি array কী জিনিস বুঝায় বলতে না পারেন,
+                            আপনার মিছিল কেউ করবে না।’ তখন তুই রাজনৈতিক ভাষণ দিয়ে বলে দিবি—ই</p>
+
+                        <p>
+                            <i> array হচ্ছে অনেকগুলা জিনিসের সমষ্টি, যার ভিতরের উপাদানগুলাকে কমা দিয়ে আলাদা করে লিখা হয়। arrayর
+                                একটা নাম থাকে এবং চাইলে উপাদান যোগ, বিয়োগ বা পরিবর্তন করা যায়। </i>
+                        </p>
+
+                        <p>var classAse = true;</p>
+                        <div class="instruct">
+                            <div class="col-xs-11">
+                                <a href="#">
+                                    <h1>এত কিছু কঠিন মনে হলে বলে দিবি- array হচ্ছে একটা বিস্কুটের প্যাকেট। </h1>
+                                </a>
+                            </div>
+                        </div>
+
+                        <p>এতক্ষণ array নিয়ে যত কিছু বললাম তার পুরা লিস্ট নিচে দিলাম। ভালো করে দুই-তিনবার রিভিশন দিয়ে নিবি।</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>যেটা শিখলি</th>
+                                    <th>সেটার বিবরণ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>friends.length;</strong>
+                                    </td>
+                                    <td>কোনো arrayর মধ্যে সর্বমোট কয়টা উপাদান আছে জানা।</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>friends.push("dolly");</strong>
+                                    </td>
+                                    <td>সর্বশেষ উপাদান হিসেবে dolly কে যোগ করা।</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>friends.pop();</strong>
+                                    </td>
+                                    <td>সর্বশেষ উপাদানকে array থেকে বের করে দেওয়া। </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>friends[2];</strong>
+                                    </td>
+                                    <td>arrayর মধ্যে 2 পজিশনে কে আছে, তাকে জানা।</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>friends.indexOf("jolil");</strong>
+                                    </td>
+                                    <td>arrayর উপাদান দিয়ে তার উপাদানের পজিশন বের করা।
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>friends.sort();</strong>
+                                    </td>
+                                    <td>arrayর সব উপাদানকে ছোট থেকে বড় ক্রম অনুসারে সাজানো।</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>toiletLine.reverse();</strong>
+                                    </td>
+                                    <td>উপাদানগুলোকে উল্টো করা।</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <div class="instruct">
+                            <div class="col-xs-11">
+                                <a href="#">
+                                    <h1>array হচ্ছে একটা বিস্কুটের প্যাকেট</h1>
+                                </a>
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="nav1">
+                    <div class="col-xs-4 noleft noright">
+                        <div class="prev">
+                            <a href="">
+                                <span>
+                                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                </span>Av‡Mi P¨vÞvi</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <h6>Chapter 1 of 17</h6>
+                    </div>
+                    <div class="col-xs-4 noleft noright">
+                        <div class="next">
+                            <a href="">c‡ii P¨vÞvi
+                                <span>
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+
+                <div class="chapter">
+                    <h1 class="heading">Chapter</h1>
+                    <div class="list1">
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রোগ্রাম খায়, পরে না মাথায় দেয়?</a>
+                            </li>
+                            <li>
+                                <a href="variable.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>Variable বুঝলে, হবে না পয়সা ব্যয়</a>
+                            </li>
+                            <li>
+                                <a href="programming.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রোগ্রামিং প্রাক্টিস করে রাত পোহালে</a>
+                            </li>
+                            <li>
+                                <a href="string.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>String এর তালে নাচবে গরু গোয়ালে</a>
+                            </li>
+                            <li>
+                                <a href="if-else.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>নানির if-else বুঝে লাফায় নানা</a>
+                            </li>
+                            <li>
+                                <a href="array.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>বিস্কুটের Array খায় বিড়াল</a>
+                            </li>
+                            <li>
+                                <a href="while-loop.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>while লুপকে করলে মালিশ</a>
+                            </li>
+                            <li>
+                                <a href="for-loop.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>For লুপ ডাকবে সালিশ</a>
+                            </li>
+                            <li>
+                                <a href="প্রেমের-প্রোপোজ-করলে-গোটা-দশ-হালি.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রেমের প্রোপোজ করলে গোটা দশ হালি</a>
+                            </li>
+                            <li>
+                                <a href="function.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>function বুঝবে না- কোনটা বউ কোনটা হালি</a>
+                            </li>
+                            <li>
+                                <a href="loan.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>দিগুন টাকা ধার করে পালালে </a>
+                            </li>
+                            <li>
+                                <a href="programming-language.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রোগ্রামিং ল্যাঙ্গুয়েজ খুঁজবে মামা শিয়ালে </a>
+                            </li>
+                            <li>
+                                <a href="bijoy.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>হাসবে হাব্লু বিজয় মিছিলে </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subscribe">
+                    <h1 class="heading">আড্ডায় যুক্ত হও</h1>
+                    <!-- <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Your email adress" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="submit">
+                                <a href="#">SUBMIT</a>
+                            </div>
+                        </form> -->
+                    <div class="fbpage">
+                        <div class="fb-page" data-href="https://www.facebook.com/jhankarmahbubshow/" data-small-header="false" data-adapt-container-width="true"
+                            data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/jhankarmahbubshow/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/jhankarmahbubshow/">Jhankar Mahbub</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightb">
+                    <h1 class="heading">হাবলুদের জন্য প্রোগ্রামিং</h1>
+                    <div class="book">
+                        <img src="img/book3.png" class="img-responsive book3">
+                        <a href="">
+                            <img src="img/buy.png" class="img-responsive buy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="social">
+                <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>হাব্লুদের জন্য প্রোগ্রামিং © 2017</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</body>
+
+</html>

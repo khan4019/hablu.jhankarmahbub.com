@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="css/xcode.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.PNG">
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">home</a>
+                            </li>
+                            <li>
+                                <a href="#">tips a></li>
+                            <li>
+                                <a href="#">web</a>
+                            </li>
+                            <li>
+                                <a href="#">guru</a>
+                            </li>
+                            <li>
+                                <a href="#">dream job</a>
+                            </li>
+                            <li>
+                                <a href="#">e-books</a>
+                            </li>
+                            <li>
+                                <a href="#">about me</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="img/banner.png" class="img-responsive">
+    </div>
+
+    <div class="section1">
+        <div class="container nopadding">
+            <div class="col-md-8">
+                <div class="insec">
+                    <h1>নানির if-else বুঝে লাফায় নানা </h1>
+                    <p>আজকের চা খাওয়া শেষে রাশেদ অন্তুকে বলল, চল, কাঁচাবাজার করতে যাই। রিকশা ভাড়া 30 টাকার কম হলে রিকশায় যাব,
+                        নচেৎ হেঁটে যাব। এই যে ভাড়া 30 টাকার কম হলে রিকশায় যাব, এই জিনিসটাকেই গুছিয়ে লিখলে, লিখতে পারস- </p>
+                    <p>যদি রিকশা ভাড়া 30 টাকার কম হয়
+                        <br> --রিকশায় যাব
+                        <br> না হলে
+                        <br> --হেঁটে যাব
+                    </p>
+                    <p>ওপরের কথাটাকে ইংরেজিতে বলতে গেলে, বলতে পারবি- </p>
+
+                    <p> if rickshawVara is less than 30 taka
+                        <br> rickshaw kore jabo
+                        <br> else
+                        <br> paye hete jabo </p>
+
+                    <p>বাংলায় চিন্তা করে সেটাকে সহজভাবে ইংরেজিতে লিখতে পারলেই, প্রোগ্রামিং করা পানির মতো সোজা হয়ে যাবে। যেমন,
+                        ওপরের ইংরেজি লেখাটাকে হালকা মডিফাই করলেই প্রোগ্রামিংয়ে লেখা হয়ে যাবে-</p>
+
+                    <pre><code>if (rickshawVara < 30){
+console.log("rickshaw kore jabo");
+}
+else{
+console.log("paye hete jabo"); 
+}</code></pre>
+
+
+                    <p>একটা জিনিস খেয়াল করছস। আমরা নরমালি যেভাবে কথা বলি প্রোগ্রামিংও কিন্তু একইভাবে করা হয়।</p>
+
+                    <h2>ভাত না পরোটা, দ্বিধায় কাটে দিনটা </h2>
+                    <p>কোনো হোটেলে ঢুকে যদি চিন্তা করস, ভাতের দাম 50 টাকার কম হলে ভাত খাবি, না হলে পরোটা খাবি। এখানে ভাত খাওয়াটা
+                        তোর প্রাথমিক চিন্তা বা অরিজিনাল প্ল্যান। ভাতের দাম কম না হলে, পরোটা খাওয়াটা ব্যাকআপ প্ল্যান বা বিকল্প
+                        চিন্তা। অরিজিনাল প্ল্যান (ভাত খাওয়া) if এর ভিতরে যাবে। আর ব্যাকআপ প্ল্যান (পরোটা খাওয়া) else-এর ভিতরে
+                        যাবে। এই ভাত না পরোটার প্রোগ্রামটা নিচের মতো করে লিখবি-</p>
+                    <pre><code>if (bhaterPrice < 50){ 
+console.log("bhat khabo"); 
+} 
+else{ 
+console.log("porota khabo"); 
+}</code></pre>
+
+                    <p>ওপরের প্রোগ্রামটা if দিয়ে শুরু হইছে এবং if-এর পরে প্রথম ব্র্যাকেটের ভিতরে একটা শর্ত আছে। এই শর্তটা সত্যি
+                        হলে, শর্তের পরে সেকেন্ড ব্র্যাকেটের ভিতরের কাজ করবে। আর if-এর পরের শর্ত মিথ্যা হলে if-এর পরের অংশ
+                        কাজ না করে else-এর পরে সেকেন্ড ব্র্যাকেটের ভিতরের কাজ করবে। অর্থাৎ if-এর পরের শর্ত সত্য হলে অরিজিনাল
+                        পস্ন্যানের কাজ করবে আর মিথ্যা হলে ব্যাকআপ পস্ন্যানের কাজ করবে। </p>
+                    <p>ওপরের প্রোগ্রামটাকে প্রোগ্রামিংয়ের ভাষায় if-else বলে। ভাতের উদাহরণটায় if-এর পরে প্রথম ব্র্যাকেটের ভিতরে
+                        শর্তে বলা আছে ভাতের দাম 50 টাকার কম হলে ভাত খাবি। তার মানে ভাতের দাম 45 টাকা চাইলে, ভাতের দাম 50
+                        টাকার কম, এই শর্ত সত্য হবে। তখন তুই ভাত খাবি। আবার ভাতের দাম 60 টাকা চাইলে, ভাতের দাম 50 টাকার চাইতে
+                        কম, এই শর্তটা মিথ্যা হবে, আর শর্ত মিথ্যা হলে if-এর পরের সেকেন্ড ব্র্যাকেটের ভিতরের কাজ করবে না। তখন
+                        else-এর পরে সেকেন্ড ব্র্যাকেটের কাজ করতে যাবে। তাই ভাতের দাম 60 টাকা হলে তুই ভাত খাবি না, পরোটা খাবি।
+                    </p>
+
+                    <h2>যত বেশি স্যালারি তত বেশি মিষ্টি</h2>
+                    <p>if-এর পরে প্রথম ব্র্যাকেটের ভিতরে সব সময়ই তুলনা করা হয়। এতক্ষণ পর্যন্ত তুই দুইটা তুলনা করছস। একটা হচ্ছে
+                        রিকশা ভাড়া 30 টাকার কম হলে, আরেকটা হচ্ছে ভাতের দাম 50 টাকার কম হলে। আগের দুইটাই ছিল- কোনো একটা ভ্যারিয়েবলের
+                        মান কোনো একটা সংখ্যার চেয়ে ছোট কি না, তুলনা করা। </p>
+                    <p>কোনো একটা সংখ্যার চেয়ে বড় তুলনা করাও খুবই সিম্পল। ধর, তু্ই যদি ঠিক করস, চাকরির বেতন 30 হাজার টাকার বেশি
+                        হলে চাকরি করবি, নাইলে বেকার থাকবি। সেই প্রোগ্রামটা নিচের মতো করে লিখবি- </p>
+
+                    <pre><code>if( salary > 30000 ){ 
+console.log("chakri korbo"); 
+} 
+else{ 
+console.log("bekar thakbo"); 
+}</code></pre>
+
+                    <h2>if-else প্রোগ্রামিং </h2>
+                    <p>এখন www.jhankarmahbub.com/console-এ গিয়ে চাকরির প্রোগ্রামটা করতে চাইলে প্রথমেই একটা ভ্যারিয়েবল ডিক্লেয়ার
+                        করে নিতে হবে। যেটার নাম দিবি স্যালারি (salary) এবং মান সেট করবি 35 হাজার। তারপর নিচের মতো করে লিখে
+                        Run বাটনে চাপ দিলে আউটপুট হিসেবে ‘chakri korbo’ দেখাবে।</p>
+                    <pre><code>var salary = 35000;
+if( salary > 30000 ){
+console.log("chakri korbo");
+else{
+console.log("bekar thakbo");
+}</code></pre>
+
+                    <p>ওপরের কোডে salary ভ্যারিয়েবলের মান 25 হাজার করে Run বাটনে চাপ দিলে আউটপুট হিসেবে ‘bekar thakbo” দেখাবে।
+                    </p>
+
+                    <h2>ব্রাউজারের console-এ প্রোগ্রামিং</h2>
+                    <p>কোনো ব্রাউজার যেমন গুগল ক্রোমের console ট্যাবে গিয়ে প্রোগ্রামিং করলে, প্রথম লাইন লিখার পরে সেকেন্ড লাইনলখার
+                        জন্য কিবোর্ডের Enter বাটনে চাপ দিলে, তোর কোড Run হয়ে যাবে। কিন্তু তোর পুরা প্রোগ্রাম এখনো লিখা হয়
+                        নাই। মাত্র এক লাইন লিখছস। এক লাইন লিখার পরে কোড রান হয়ে গেলে কোডে ভুল ধরবে। অথচ তুই কোড Run না করেই
+                        পরের লাইনে লিখতে চাইছিলি। সেটা করার জন্য কিবোর্ডের Shift বাটনে চেপে ধরে Enter বাটনে চাপ দিতে হবে।
+                        অর্থাৎ আগে Shift বাটন চাপ দিবি তারপর সেটা থেকে আঙুল না উঠিয়েই Enter বাটনে চাপ দিবি। এইভাবে যত লাইন
+                        লিখা লাগে লিখবি। সব লাইন লিখা শেষ হয়ে গেলে Enter বাটনে চাপ দিবি। তখন সবগুলা লাইনের কোড একসাথে Run
+                        হবে। এই সিস্টেমটা কঠিন মনে হলে, অন্য কোথাও টাইপ করে, গুগল ক্রোমের console ট্যাবে কপি-পেস্ট করে, Enter
+                        বাটনে চাপ দিয়ে দিবি। কাজ হয়ে যাবে।</p>
+                    <h2>শর্তের বাহার </h2>
+                    <p>অনেক সময় শর্ত একদম সমান সমান হতে হবে। যেমন, 10 কেজি আপেল কিনতে গেলে, আপেলের পরিমাণ একজ্যাক্টলি 10 কেজি
+                        হতে হবে। কম বা বেশি হওয়া যাবে না। কারণ মাপে 10 কেজির চাইতে কম হলে তোর লস। আর বেশি হলে ফল বিক্রেতার
+                        লস। তাই একদম সমান সমান তুলনা করতে weight == 10 লিখবি। দুইটা সমান চিহ্ন দিবি। </p>
+                    <p>শর্তের মধ্যে যে সব সময় কম অথবা বেশি তুলনা করতে হবে তা কিন্তু না। যেমন, ভোটার হতে হলে বয়স 18 বা তার বেশি
+                        হতে হবে। অর্থাৎ বয়স 18-এর সমান বা বেশি হলে ভোট দিতে পারবে। কোনো জিনিস সমান অথবা বেশি তুলনা করতে চাইলে,
+                        if-এর পরে প্রথম ব্র্যাকেটের ভিতরে age >= 18 লিখবি। আবার বার্গারের দাম 100 টাকার কম অথবা সমান হলে
+                        বার্গার খাবি। এটা তুলনা করার জন্য if-এর শর্ত হিসেবে burgerPrice
+                        <=1 00 লিখবি। </p>
+
+                            <h2>ঘাড় ত্যাড়া শর্ত</h2>
+                            <p>ঘাড় ত্যাড়া মার্কা দুই-একটা ফ্রেন্ড সবারই থাকে। যাদের একটা জিনিসে পেট ভরে না। দুই-তিনটা জিনিস
+                                চায় এবং যে কয়টা জিনিস চায় তার সবগুলাই তাকে দিতে হয়। এই রকম ঘাড় ত্যাড়া পোলাপান ছোটবেলায় খেলনা
+                                আর আইসক্রিম চাইলে, তাকে দুইটাই দিতে হইত। একটা দিয়ে আরেকটা না দিলে তার কান্নাকাটি থামাত না।
+                            </p>
+                            <p>এরকম একজন বড় হয়ে টিউশনি করতে গেলে সেখানেও শর্ত জুড়ে দিবে- টিউশনির বেতন 6000 টাকার বেশি হতে হবে
+                                এবং ছাত্রী হতে হবে। অর্থাৎ তার দুইটা শর্তই পূরণ করতে হবে, নচেৎ টিউশনি করাবে না। তোর সেই ঘাড়
+                                ত্যাড়া ফ্রেন্ডের দুইটা শর্ত দিয়ে if-else নিচের মতো করে লিখবি- </p>
+
+                            <pre><code>var beton = 6500; 
+var isChatri = true; 
+                                
+if (beton > 6000 && isChatri == true){ 
+console.log("kopal khule gese"); 
+} 
+else{ 
+console.log("fokira marka tiutioni"); 
+}</code></pre>
+
+                            <p>খেয়াল করছস, দুইটা শর্তের মাঝখানে দুইটা & চিহ্ন দেওয়া হয়েছে। দুইটা শর্তের মাঝখানে && থাকলে, দুইটা
+                                শর্তই পূরণ করতে হবে। দুইটার কোনো একটা শর্ত পূরণ না করলে সে টিউশনি করাবে না। অর্থাৎ if-এর
+                                পরে সেকেন্ড ব্র্যাকেটের ভিতরের কাজ করবে না। এখন ওপরের কোডের মধ্যে টিউশনির বেতনের মান 5000
+                                করে দিয়ে, প্রোগ্রামটা Run করে দেখ কী আউটপুট দেখায়। আবার বেতন 7000 করে isCharti = false; করে
+                                দেখ কী আউটপুট দেখায়। </p>
+
+                            <h2>অগা-মগার শর্ত </h2>
+                            <p>দুই-একজন খুবই ভালো ফ্রেন্ড সবারই থাকে। যাদের অগা-মগা বলে বিবেচনা করা হয়। এরা দুই-তিনটা জিনিস
+                                চাইলেও, শুধু একটা জিনিস দিয়ে বুঝ দেওয়া যায়। এই মগা মার্কা বাচ্চারা ছোটবেলায় কান্নাকাটি করে
+                                বলে— আমাকে আইসক্রিম বা খেলনা কিনে দাও। অর্থাৎ তাকে আইসক্রিম বা খেলনার যেকোনো একটা কিনে দিলেই
+                                শান্ত হয়ে যায়। ঘাড় ত্যাড়া বাচ্চার মতো দুইটাই পাওয়ার জন্য চিল্লাচিল্লি করবে না। </p>
+                            <p>এরকম কিউট বা মগা মার্কা একজন বড় হয়ে টিউশনি করতে গেলে বলবে- টিউশনির বেতন 4000 টাকার বেশি হতে হবে
+                                বা ছাত্রী হতে হবে। তাহলেই সে টিউশনি করাবে। দুইটার কোনোটাই না হলে, সে টিউশনি করাবে না। তোর
+                                সেই মগা মার্কা ফ্রেন্ডের জন্য if-else নিচের মতো করে লিখবি- </p>
+                            <pre><code>var beton = 2500; 
+var isChatri = true; 
+
+if (beton > 4000|| isChatri == true){ 
+console.log("kopal khule gese"); 
+} 
+else{ 
+console.log("fokira marka tiutioni"); 
+}</code></pre>
+                            <p>তোর ঘাড় ত্যাড়া ফ্রেন্ডের দুইটা শর্ত পূরণ করতে যেখানে && চিহ্ন দিছিলি, সেখানে মগা ফ্রেন্ডের দুইটা
+                                লম্বালম্বি দাগ || দিবি। এই লম্বালম্বি দাগ কিন্তু ডাবল কোটেশন না। খেয়াল করে দেখ, ডাবল কোটেশনের
+                                দাগ হচ্ছে ছোট ছোট (if-এর ভিতরে console.log-এর মধ্যে দেখ)। এই লম্বা দাগকে ইংরেজিতে vertical
+                                bar বলে। সাধারণত কিবোর্ডের Enter বাটনের ওপরে backslash বা পিছনের দিকের স্লণ্যাশ ( \ ) এর
+                                ওপরে ড্যাশ বা broken bar (¦)-এর মতো দেখতে একটা চিহ্ন থাকে। কিবোর্ডের Shift বাটনে চেপে ধরে
+                                backslash-এ চাপ দিলেই vertical bar বা লম্বালম্বি দাগ পেয়ে যাবি। আর মোবাইল ব্যবহার করলে, চিহ্নের
+                                চিপা-চাপাতে খুঁজতে থাক। এক সময় না এক সময় vertical bar পেয়ে যাবি।</p>
+                            <p>দুইটা শর্তের মাঝখানে || থাকলে, দুইটা শর্তের যেকোনো একটা পূরণ করলেই if-এর ভিতরে চলে যাবে। আর দুইটা
+                                শর্তের, দুইটাই পূরণ করে ফেললে, অবশ্যই if-এর ভিতরে যাবে। কারণ দুইটা শর্ত পূরণ করতে গেলে, একটা
+                                শর্ত অবশ্যই পূরণ করা হয়ে গেছে। তবে দুইটা শর্তের কোনোটাই পূরণ করা না হলে, if-এর ভিতরে যাবে
+                                না। তখন else-এর ভিতরে চলে যাবে। আগের কোডটায় var beton = 4500 এবং var isChartri = false করে
+                                দে। দেখবি আউটপুট হিসেবে "kopal khule gese" দেখাবে। আবার var beton = 4500 এবং var isChartri
+                                = true করে দিলেও আউটপুট হিসেবে "kopal khule gese" দেখাবে। তবে দুইটা শর্তের কোনোটাই পূরণ না
+                                করলে, অর্থাৎ var beton = 2500 এবং var isChartri = false করে দিলে আউটপুট হিসেবে "fokira marka
+                                tiutioni" দেখাবে। </p>
+
+                            <h2>ভ্যারিয়েবলে ভ্যারিয়েবলে মারামারি</h2>
+                            <p>যখন কোনো প্রশ্নের উত্তরে হ্যাঁ বা না বলস, তখনই true এবং false ব্যবহার করে ফেলস। ধর, তোর আম্মু
+                                জিজ্ঞেস করল- ‘আজকে ক্লাস আছে?’ তুই চাইলে হ্যাঁ বা না বলে উত্তর দিতে পারবি। আবার একই প্রশ্নের
+                                উত্তর হিসেবে true বা false ব্যবহার করতে পারবি। তুই যেমন— </p>
+
+                            <pre><code>var biriyaniPrice = 100; 
+var khichuriPrice = 120; 
+
+if(biriyaniPrice < khichuriPrice){
+console.log("I will eat biriyani"); 
+} 
+else{ 
+console.log("I will eat khichuri"); 
+}</code></pre>
+
+                            <h2>যদির গদি</h2>
+                            <p>ধর, তুই স্টেডিয়ামে খেলা দেখার টিকিট কিনতে গিয়ে ভাবলি— টিকিটের দাম 100 টাকার কম হলে খেলা দেখবি।
+                                তবে টিকিটের দাম 100 টাকার বেশি হলে কী করবি, সেটা এখনো ঠিক করস নাই। যেহেতু ব্যাকআপ প্ল্যান
+                                সেট করা হয় নাই, সেহেতু if-এর পরে else অংশ দেওয়া লাগে না। অর্থাৎ if-এর পরে প্রথম ব্র্যাকেট
+                                দিয়ে ভিতরের শর্ত মিথ্যা হলে, else-এ গিয়ে কী কাজ করা লাগবে, সেটা লিখা লাগবে না। সে জন্য তোর
+                                প্রোগ্রামটা আরও ছোট ও সিম্পল হয়ে যাবে। </p>
+
+                            <p>if-এর শর্ত সত্য হলে, if-এর ভিতরে যাবে। আর শর্ত মিথ্যা হলে, if-এর ভিতরে যাবে না। খুবই সিম্পল কথাবার্তা।</p>
+
+                            <pre> <code>var ticketPrice = 115; 
+
+if( ticketPrice < 100 ){ 
+console.log("stadium e khela dekhbo"); 
+}</code></pre>
+
+                            <p> ওপরে কোডে টিকিটের দাম (ticketPrice)-এর মান 115 টাকা। তাই কোনো আউটপুট দেখাবে না। যদি ticketPrice
+                                পরিবর্তন করে 95 করে দেস, তাহলে আউটপুট হিসেবে stadium e khela dekhbo দেখাবে। এখন পর্যন্ত যে
+                                যে তুলনা করার উপায় বলেছি সবগুলা একসাথে নিচে দিলাম। ভালো করে তিন-চারবার দেখে নে।
+                            </p>
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>তুলনা</th>
+                                        <th>চিহ্ন</th>
+                                        <th>উদাহরণ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <strong>ছোট</strong>
+                                        </td>
+                                        <td><</td>
+                                        <td>rickshawVara < 50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>বড়</strong>
+                                        </td>
+                                        <td>></td>
+                                        <td>salary > 30000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>বড় বা সমান</strong>
+                                        </td>
+                                        <td>>=</td>
+                                        <td>age >= 18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>ছোট বা সমান</strong>
+                                        </td>
+                                        <td><=</td>
+                                        <td>burgerPrice <= 100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>সমান সমান</strong>
+                                        </td>
+                                        <td>==</td>
+                                        <td>weight == 10
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>প্রথম শর্ত ও দ্বিতীয় শর্ত</strong>
+                                        </td>
+                                        <td>&&</td>
+                                        <td>beton > 6000 && isChatri == true</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>প্রথম শর্ত অথবা দ্বিতীয় শর্ত</strong>
+                                        </td>
+                                        <td>false</td>
+                                        <td>beton > 4000|| isChatri == true</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <p>এই ওপরের টেবিলটা দেখে দেখে কমপক্ষে দুইবার লিখবি। তারপর সবগুলা প্রোগ্রাম
+                                <a href="http://www.jhankarmahbub.com/console">www.jhankarmahbub.com/console</a> -এ গিয়ে নিজে নিজে টাইপ করে প্র্যাকটিস করবি। যত বেশি প্র্যাকটিসের
+                                গুড় ঢালবি, তত বেশি মজা পাবি। তা ছাড়া, এখানে যে যে উদাহরণ বলেছি, সেগুলা ছাড়াও তোর চারপাশ থেকে
+                                অন্য কোনো ঘটনা, যেকোনো সিচুয়েশনে, যখনই কেউ বলবে ‘এইটা না ওইটা করব’, তখনই সাথে সাথে তোর মাথার
+                                ভিতরে একটা if-else চালিয়ে দিবি। মনে মনে ঠিক করে ফেলবি- আরে, এইটা তো if-else হবে। if-এর ভিতরে
+                                এই কাজ হবে আর else-এর ভিতরে ওই কাজ হবে। তারপর দুই মিনিট সময় পাইলে
+                                <a href="http://www.jhankarmahbub.com/console">www.jhankarmahbub.com/console</a> গিয়ে প্রোগ্রামিং করে ফেলবি। এভাবেই সবাই প্রোগ্রামার হয়।
+                                তুইও হবি।</p>
+
+                            <p>var classAse = true;</p>
+                            <div class="instruct">
+                                <div class="col-xs-1 noleft">
+                                    <!--  <div class="hand">
+                                <img src="img/hand.png" />
+                            </div> -->
+                                </div>
+                                <div class="col-xs-11">
+                                    <a href="#">
+
+
+                                        <h1>সত্য হলে অরিজিনাল প্ল্যান, মিথ্যা হলে ব্যাকআপ প্ল্যান</h1>
+                                    </a>
+                                </div>
+                            </div>
+                </div>
+
+                <div class="nav1">
+                    <div class="col-xs-4 noleft noright">
+                        <div class="prev">
+                            <a href="">
+                                <span>
+                                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                </span>Av‡Mi P¨vÞvi</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <h6>Chapter 1 of 17</h6>
+                    </div>
+                    <div class="col-xs-4 noleft noright">
+                        <div class="next">
+                            <a href="">c‡ii P¨vÞvi
+                                <span>
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+                <div class="chapter">
+                    <h1 class="heading">Chapter</h1>
+                    <div class="list1">
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রোগ্রাম খায়, পরে না মাথায় দেয়?</a>
+                            </li>
+                            <li>
+                                <a href="variable.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>Variable বুঝলে, হবে না পয়সা ব্যয়</a>
+                            </li>
+                            <li>
+                                <a href="programming.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রোগ্রামিং প্রাক্টিস করে রাত পোহালে</a>
+                            </li>
+                            <li>
+                                <a href="string.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>String এর তালে নাচবে গরু গোয়ালে</a>
+                            </li>
+                            <li>
+                                <a href="if-else.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>নানির if-else বুঝে লাফায় নানা</a>
+                            </li>
+                            <li>
+                                <a href="array.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>বিস্কুটের Array খায় বিড়াল</a>
+                            </li>
+                            <li>
+                                <a href="while-loop.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>while লুপকে করলে মালিশ</a>
+                            </li>
+                            <li>
+                                <a href="for-loop.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>For লুপ ডাকবে সালিশ</a>
+                            </li>
+                            <li>
+                                <a href="প্রেমের-প্রোপোজ-করলে-গোটা-দশ-হালি.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রেমের প্রোপোজ করলে গোটা দশ হালি</a>
+                            </li>
+                            <li>
+                                <a href="function.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>function বুঝবে না- কোনটা বউ কোনটা হালি</a>
+                            </li>
+                            <li>
+                                <a href="loan.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>দিগুন টাকা ধার করে পালালে </a>
+                            </li>
+                            <li>
+                                <a href="programming-language.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রোগ্রামিং ল্যাঙ্গুয়েজ খুঁজবে মামা শিয়ালে </a>
+                            </li>
+                            <li>
+                                <a href="bijoy.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>হাসবে হাব্লু বিজয় মিছিলে </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subscribe">
+                    <h1 class="heading">আড্ডায় যুক্ত হও</h1>
+                    <!-- <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Your email adress" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="submit">
+                                <a href="#">SUBMIT</a>
+                            </div>
+                        </form> -->
+                    <div class="fbpage">
+                        <div class="fb-page" data-href="https://www.facebook.com/jhankarmahbubshow/" data-small-header="false" data-adapt-container-width="true"
+                            data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/jhankarmahbubshow/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/jhankarmahbubshow/">Jhankar Mahbub</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightb">
+                    <h1 class="heading">হাবলুদের জন্য প্রোগ্রামিং</h1>
+                    <div class="book">
+                        <img src="img/book3.png" class="img-responsive book3">
+                        <a href="">
+                            <img src="img/buy.png" class="img-responsive buy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="social">
+                <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>হাব্লুদের জন্য প্রোগ্রামিং © 2017</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</body>
+
+</html>

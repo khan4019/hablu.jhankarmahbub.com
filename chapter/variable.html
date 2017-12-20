@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Variable বুঝলে, হবে না পয়সা ব্যয়</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.PNG">
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">home</a>
+                            </li>
+                            <li>
+                                <a href="#">tips </a>
+                            </li>
+                            <li>
+                                <a href="#">web</a>
+                            </li>
+                            <li>
+                                <a href="#">guru</a>
+                            </li>
+                            <li>
+                                <a href="#">dream job</a>
+                            </li>
+                            <li>
+                                <a href="#">e-books</a>
+                            </li>
+                            <li>
+                                <a href="#">about me</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="img/banner.png" class="img-responsive">
+    </div>
+
+    <div class="section1">
+        <div class="container nopadding">
+            <div class="col-md-8">
+                <div class="insec">
+                    <h1>Variable বুঝলে, হবে না পয়সা ব্যয়</h1>
+                    <p>আজকে চাল কিনা লাগবে। সে জন্য চা খেতে খেতে অন্তুর সাথে চাল নিয়ে গল্প শুরু করেছে রাশেদ</p>
+                    <h2>আধাকেজি চালের দাম</h2>
+                    <p>দোকানে গিয়ে আধা কেজি চালের দাম জিজ্ঞেস করলে দোকানদার বলবে- চালের দাম বেড়ে গেছে। এখন আধা কেজি চালের দাম
+                        28 টাকা। এক মাস আগেও আধা কেজি চালের দাম ছিল 25 টাকা।
+                        <br>
+                        <br>দেখা যাচ্ছে, চালের দাম নির্দিষ্ট থাকছে না। পরিবর্তিত হয়ে যাচ্ছে। আজকে আধাকেজি চালের দাম 28 টাকা হলেও,
+                        এক মাস পরে এই আধা কেজি চালের দাম আর 28 টাকা থাকবে না। সেটা হয়ে যাবে 29 টাকা, ছয় মাস পরে হয়ে যাবে
+                        34 টাকা আর এক বছর পরে কত হবে, আল্লাহই মালুম। হয়তো 39, নাহয় 41 টাকা হবে। </p>
+                    <p>আধা কেজি চালের দাম আজীবন কিন্তু একই থাকবে না। মাসে মাসে পরিবর্তিত বা চেইঞ্জ হয়ে যাবে। এইটাই সিস্টেম।
+                        এইটাকে একটু ঘুরিয়ে বললে বলতে পারস, চালের দাম পরিবর্তিত হচ্ছে বা vary করতেছে। কোনো একটা জিনিস ভ্যারি
+                        (vary) করলে বা পরিবর্তিত হলে, তাকে প্রোগ্রামিংয়ের ভাষায় ভ্যারিয়েবল বলে। </p>
+                    <p>ভ্যারিয়েবল (variable) একটা ইংরেজি শব্দ। সন্ধিবিচ্ছেদের মতো মনে করতে পারস, এই শব্দের মধ্যে দুইটা অংশ আছে।
+                        ধর, ভ্যারিয়েবলের সন্ধিবিচ্ছেদ করলে vary + able = variable হবে। প্রথম অংশ ‘ভ্যারি’ (vary) যার মানে
+                        হচ্ছে, কোনো একটা জিনিস ভ্যারি করে বা পরিবর্তিত হয় আর দ্বিতীয় অংশ ‘এবল’ (able), মানে যোগ্য। তাই ভ্যারিয়েবল
+                        বলতে বুঝায় কোনো একটা জিনিস যেটা ভ্যারি করার যোগ্য, পরিবর্তিত হতে পারে বা চেইঞ্জ হতে পারে। যেমন, আধা
+                        কেজি চালের দাম, এক কেজি পেঁয়াজের দাম ইত্যাদি।</p>
+                    <p>আধা কেজি ডালের দামও কিন্তু সারাজীবন একই থাকবে না। সেটাও মাসে মাসে পরিবর্তিত হবে। এ জন্য আধা কেজি ডালের
+                        দামও একটা ভ্যারিয়েবল। একইভাবে ডিমের দাম, লবণের দাম, চিনির দাম, পেঁয়াজের দাম, সবকিছুর দামই কিন্তু
+                        পরিবর্তিত হবে। তাই এই সবগুলোই এক একটা ভ্যারিয়েবল।</p>
+                    <h2>মসলার কৌটা </h2>
+                    <p>সবার রান্নাঘরে অনেকগুলা ছোট ছোট মসলার কৌটা থাকে। কৌটাগুলা দেখতে একই রকমের হয়। এই কৌটাগুলার ভিতরে মসলার
+                        পরিমাণ নির্দিষ্ট থাকে না। রান্নাবান্না করলে কৌটার ভিতরের মসলা কমে যায়। আবার বাজার থেকে মসলা কিনে
+                        এনে কৌটার মধ্যে রাখলে, কৌটার ভিতরের জিনিসের পরিমাণ বেড়ে যায়। যেহেতু কৌটার ভিতরে জিনিসের পরিমাণ ভ্যারি
+                        করতেছে, সেহেতু এক একটা কৌটাকে এক একটা ভ্যারিয়েবল চিন্তা করতে পারস।</p>
+                        <div class="blacknwhite">
+                            <img src="img/variable.jpg" class="img-responsive">
+                        </div>
+                        <p>কৌটাগুলো দেখতে একই রকমের হওয়ায় প্রথম সমস্যা হচ্ছে, কোন কৌটার মধ্যে কী আছে, সেটা সহজে বলা যায় না।
+                            হয়তো কোনোটার ভিতরে হলুদ, কোনোটার ভিতরে মরিচ, আবার কোনোটার মধ্যে লবণ আছে। কোন কৌটার মধ্যে কী আছে,
+                            সেটা সহজে খুঁজে বের করার জন্য দেখবি অনেকেই কৌটার ওপর নাম লিখে রাখে। অর্থাৎ এক এক কৌটাকে এক একটা
+                            নাম দেওয়া হয়। এখন ‘লবণ’ নামের কৌটা বের করলেই লবণের পরিমাণ জানতে পারবি। </p>
+                        <p>একইভাবে ‘হলুদ’ নামের কৌটা থেকে হলুদের পরিমাণ জানতে পারবি। কৌটার ভিন্ন ভিন্ন নাম থাকার কারণে হলুদ,
+                            মরিচ, লবণ খুঁজে বের করতে তেমন কষ্ট হয় না।</p>
+                        <h2>ভ্যারিয়েবলের মসলা</h2>
+                        <p>মসলার কৌটার মতো ভ্যারিয়েবলগুলারও এক একটা নাম থাকে। যাতে নাম ধরে ডাক দিয়ে সহজেই ভ্যারিয়েবলকে খুঁজে
+                            বের করা যায় এবং ভ্যারিয়েবলের মান জানা যায়। যেমন, ‘চালের দাম’ নামে একটা ভ্যারিয়েবল থাকলে, ‘চালের
+                            দাম’ বলে ডাক দিলে, চালের দাম ভ্যারিয়েবলের মান জানতে পারবি। একইভাবে ‘ডালের দাম’ নামক ভ্যারিয়েবলের
+                            নাম ধরে ডাক দিলে, ডালের দাম ভ্যারিয়েবলের মান জানতে পারবি। </p>
+                        <p>আরেকটা কথা, দোকানদার কিন্তু আগে থেকেই চালের দাম ঠিক করে রাখে। যাতে কেউ জিজ্ঞেস করলে সাথে সাথে চালের
+                            দাম বলে দিতে পারে। দোকানদারের চালের দাম ঠিক করার সেই কাজটাকে বলতে পারস- দোকানদার চালের দাম সেট
+                            করতেছে। অর্থাৎ ‘চালের দাম’ নামক ভ্যারিয়েবলের মান সেট করতেছে।</p>
+                        <p class="mb0">মনে রাখবি, ভ্যারিয়েবল হচ্ছে এমন একটা জিনিস যার— </p>
+                        <ul>
+                            <li>
+                                <span>1.</span>ভ্যালু বা মান পরিবর্তিত হতে পারে </li>
+                            <li>
+                                <span>2.</span>নির্দিষ্ট একটা নাম থাকবে</li>
+                            <li>
+                                <span>3.</span>সেই নাম ধরে জিজ্ঞেস করলে, মান জানা যাবে </li>
+                        </ul>
+                        
+                        <h2>ভ্যারিয়েবল ক্যামনে লিখে</h2>
+                        <p>চালের দাম জানার জন্য একটা ভ্যারিয়েবল লিখতে চাইলে প্রথমেই ভ্যারিয়েবলটার একটা নাম দিতে হবে। ভ্যারিয়েবলের
+                            নাম দেওয়া অনেকটা মসলার কৌটার ওপরে নাম লেখার মতো। হলুদের কৌটার ওপর ‘হলুদ’ লেখা থাকে যাতে নাম দেখলে
+                            বোুঝা যায় ভিতরে কী আছে। একইভাবে, ভ্যারিয়েবলের এমন একটা নাম দিতে হবে যাতে নাম শুনেই বোঝা যায়,
+                            এই ভ্যারিয়েবলের ভিতরে কী থাকতে পারে।</p>
+                        <p>তুই যেহেতু চালের দাম জানতে চাস, সেহেতু ভ্যারিয়েবলের নাম দিবি, ‘চালের দাম’। যেটাকে ইংরেজিতে লিখবি
+                            chalerDam । এখন chalerDam ভ্যারিয়েবলের মান সেট করতে চাইলে, সমান চিহ্ন দিয়ে, যে মান সেট করতে চাইবি
+                            সেটা লিখে দিবি। যেমন, তুই chalerDam ভ্যারিয়েবলের মান 28 টাকা সেট করার জন্য নিচের মতো লিখবি। </p>
+                        <p>ChalerDam = 28</p>
+                        <p>একটা জিনিস খেয়াল করবি, ভ্যারিয়েবলের নাম ইংরেজিতে লেখার সময় একশব্দে লিখতে হয় (মাঝখানে কোনো গ্যাপ বা
+                            খালি জায়গা দেওয়া যায় না)। সে জন্য chaler Dam ভ্যারিয়েবলের নাম হিসেবে লেখা যাবে না। এক শব্দে chalerDam
+                            লিখতে হবে। </p>
+                        <h2>দাদার বয়স</h2>
+                        <p>আরেকটা ভ্যারিয়েবলের কথা বলি। ধর, কেউ তোর দাদাকে গিয়ে জিজ্ঞেস করল, আপনার বয়স কত? তোর দাদা এই বছর বলবেন
+                            69, পরের বছর বলবেন 70, তার পরের বছর জিজ্ঞেস করলে বলবেন 71। এই যে তোর দাদার বয়সটা, এইটা কিন্তু
+                            পরিবর্তিত বা চেইঞ্জ হইতেছে, তার মানে এটা বছর বছর ভ্যারি করতেছে। অর্থাৎ বয়সের মান বা value পরিবর্তিত
+                            হইতেছে। তাই এইটাকেও একটা variable বলতে পারস। এখন বয়স নামে একটা ভ্যারিয়েবল লিখতে চাইলে, ভ্যারিয়েবলের
+                            নাম দিবি বয়স। বয়সকে ইংরেজিতে বলে ‘age’। আর যদি ‘age’-এর মান 69 সেট করতে চাস, তাহলে লিখবি-</p>
+                        <p>age = 69 </p>
+                        <p>শুধু দাদার বয়স না, দাদার ওজন, চশমার পাওয়ারও পরিবর্তন হয়। তাই এগুলোও ভ্যারিয়েবল। বয়সের ভ্যারিয়েবল
+                            যেভাবে লিখছস, করছস, এই ভ্যারিয়েবলগুলাও একই পদ্ধতিতে লিখতে পারবি।</p>
+                        <h2>ভ্যারিয়েবল কারে কয়</h2>
+                        <p>ধর, টিপটিপ বৃষ্টির দিনে রোমান্টিক মুডে বের হইছস তোর গার্লফ্রেন্ডের সাথে ঘুরতে। কিছুক্ষণ পরে বৃষ্টির
+                            তেজ বেড়ে গেছে। সে মুহূর্তে ছাতা বের করতে করতে তোর গার্লফ্রেন্ড বলল— ‘জান, দেখছ বৃষ্টি পড়ার পরিমাণ
+                            ভ্যারি করতেছে।’ তুই তো অবাক হয়ে যাবি। তোর গার্লফ্রেন্ডও বুঝে বৃষ্টির বেগ নির্দিষ্ট থাকতেছে না,
+                            ভ্যারি করতেছে। তখন তুই আলতো করে খোঁচা দিয়ে রোমান্টিক সুরে বলবি, ‘সখী, ভ্যারিয়েবল কারে কয়?’ আর
+                            তোর গার্লফ্রেন্ড উল্টা খোঁচা দিয়ে বলবে, </p>
+
+                        <div class="instruct">
+                            <div class="col-xs-1 noleft">
+                                <!--  <div class="hand">
+                                    <img src="img/hand.png" />
+                                </div> -->
+                            </div>
+                            <div class="col-xs-11">
+                                <a href="#">
+                                    <h2><i>ভ্যারিয়েবল হচ্ছে এমন একটা জিনিস যার ভ্যালু বা মান পরিবর্তিত হতে পারে এবং তার একটা নাম
+                                            থাকবে। সেই নাম ধরে জিজ্ঞেস করলে ভ্যারিয়েবলের মান জানা যাবে। </i></h2>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="instruct">
+                            <div class="col-xs-11">
+                                <a href="#">
+                                    <h1>আর এত কিছু গ্যাঞ্জাম মনে হলে সে বলে দিবে, ভ্যারিয়েবল হচ্ছে- আধা কেজি চালের দাম। </h1>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="nav1">
+                    <div class="col-xs-4 noleft noright">
+                        <div class="prev">
+                            <a href="">
+                                <span>
+                                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                </span>Av‡Mi P¨vÞvi</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <h6>Chapter 1 of 17</h6>
+                    </div>
+                    <div class="col-xs-4 noleft noright">
+                        <div class="next">
+                            <a href="">c‡ii P¨vÞvi
+                                <span>
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+
+                    <div class="chapter">
+                            <h1 class="heading">Chapter</h1>
+                            <div class="list1">
+                                <ul>
+                                    <li><a href="index.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>প্রোগ্রাম খায়, পরে না মাথায় দেয়?</a></li>
+                                    <li><a href="variable.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>Variable বুঝলে, হবে না পয়সা ব্যয়</a></li>
+                                    <li><a href="programming.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>প্রোগ্রামিং প্রাক্টিস করে রাত পোহালে</a></li>
+                                    <li><a href="string.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>String এর তালে নাচবে গরু গোয়ালে</a></li>
+                                    <li><a href="if-else.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>নানির if-else বুঝে লাফায় নানা</a></li>
+                                    <li><a href="array.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>বিস্কুটের Array খায় বিড়াল</a></li>
+                                    <li><a href="while-loop.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>while লুপকে করলে মালিশ</a></li>
+                                    <li><a href="for-loop.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>For লুপ ডাকবে সালিশ</a></li>
+                                    <li><a href="প্রেমের-প্রোপোজ-করলে-গোটা-দশ-হালি.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>প্রেমের প্রোপোজ করলে গোটা দশ হালি</a></li>
+                                    <li><a href="function.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>function বুঝবে না- কোনটা বউ কোনটা হালি</a></li>
+                                    <li><a href="loan.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>দিগুন টাকা ধার করে পালালে </a></li>
+                                    <li><a href="programming-language.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>প্রোগ্রামিং ল্যাঙ্গুয়েজ খুঁজবে মামা শিয়ালে </a></li>
+                                    <li><a href="bijoy.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>হাসবে হাব্লু বিজয় মিছিলে </a></li>
+                                </ul>
+                            </div>
+                        </div>           
+
+                <div class="subscribe">
+                    <h1 class="heading">আড্ডায় যুক্ত হও</h1>
+                    <!-- <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Your email adress" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="submit">
+                                <a href="#">SUBMIT</a>
+                            </div>
+                        </form> -->
+                    <div class="fbpage">
+                        <div class="fb-page" data-href="https://www.facebook.com/jhankarmahbubshow/" data-small-header="false" data-adapt-container-width="true"
+                            data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/jhankarmahbubshow/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/jhankarmahbubshow/">Jhankar Mahbub</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightb">
+                    <h1 class="heading">হাবলুদের জন্য প্রোগ্রামিং</h1>
+                    <div class="book">
+                        <img src="img/book3.png" class="img-responsive book3">
+                        <a href="">
+                            <img src="img/buy.png" class="img-responsive buy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="social">
+                <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>হাব্লুদের জন্য প্রোগ্রামিং © 2017</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/highlight.pack.js"></script>    
+    <script type="text/javascript">
+    
+
+</body>
+
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="css/xcode.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.PNG">
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#">home</a>
+                            </li>
+                            <li>
+                                <a href="#">tips </a>
+                            </li>
+                            <li>
+                                <a href="#">web</a>
+                            </li>
+                            <li>
+                                <a href="#">guru</a>
+                            </li>
+                            <li>
+                                <a href="#">dream job</a>
+                            </li>
+                            <li>
+                                <a href="#">e-books</a>
+                            </li>
+                            <li>
+                                <a href="#">about me</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="img/banner.png" class="img-responsive">
+    </div>
+
+    <div class="section1">
+        <div class="container nopadding">
+            <div class="col-md-8">
+                <div class="insec">
+                    <h1>প্রেমের প্রপোজ করলে গোটা দশ হালি</h1>
+                    <p>আজকেও লিটন ভাইয়ের দোকানের চা খাওয়া শেষ করে রাশেদ বলতে শুরু করল—</p>
+
+                    <h2>প্রেমের মরা জলে ডুবে না</h2>
+                    <p>ধর, কয়েক দিন সিঙ্গেল থেকে প্রেম করার জন্য তুই মরিয়া হয়ে উঠছস। প্রপোজ করার জন্য চারজনকে শর্টলিস্টও করে
+                        ফেলছস। চারজনকে নিয়ে একটা arrayও লিখে সেই arrayর নাম দিছস girls। এখন তোর girls নামক arrayর এক একজনকে
+                        ধরে ধরে প্রপোজ করার জন্য নিচের মতো করে for লুপ লিখবি- </p>
+
+                    <pre><code>var girls = ["amina", "jamina", "kamina", "pabina"];
+for( var i = 0 ; i < 4 ; i++ ){
+ console.log("propose a girl"); 
+}</code></pre>
+
+
+                    <p>এখন এই কোড
+                        <a href="http://www.jhankarmahbub.com/console"> www.jhankarmahbub.com/console-</a>এ গিয়ে টাইপ করে Run বাটনে চাপ দিলে "propose a girl" চারবার দেখাবে।
+                        মনে কর, তোর লিস্টে আরও দুইজন মেয়ে যোগ হয়ে গেছে। এখন তোর girls নামক array-তে ছয়জন মেয়ে আছে। নিচের
+                        মতো কোড লিখে প্রপোজ করলি- </p>
+
+                    <pre><code>var girls = ["amina", "jamina", "kamina", "pabina", "lamina", "samina"]; 
+for( var i = 0 ; i < 4 ; i++ ){
+ console.log("propose a girl");
+}
+</code></pre>
+                    <p>যদিও তোর লিস্টে ছয়জন মেয়ে আছে, তার পরও "propose a girl" চারবার দেখাবে। তার মানে দুইজনকে প্রপোজ করে নাই।:(</p>
+
+                    <h2>প্রেমের সওদাগর </h2>
+                    <p>একটা জিনিস খেয়াল কর, for লুপের মাঝখানে i
+                        < 4 আছে। তার মানে প্রত্যেকবার তুলনা করে দেখবে i-এর মান 4-এর চাইতে ছোট কি না। যতক্ষণ ছোট থাকবে, ততক্ষণ for লুপের সেকেন্ড ব্র্যাকেটের
+                            ভিতরে যাবে। আর বাড়তে বাড়তে i-এর মান 4 হয়ে গেলে i < 4 শর্তটা মিথ্যা হয়ে যাবে। তাই সেকেন্ড ব্র্যাকেটের
+                            ভিতরের অংশের কাজ করতে যাবে না। যদিও তোর grils নামক arrayর মধ্যে ছয়জন মেয়ে আছে, তার পরও for লুপ 4
+                            বারের বেশি চলবে না। </p>
+
+                            <p>এই সমস্যা দূর করার জন্য, for লুপের মাঝখানের অংশ পরিবর্তন করে i
+                                < 6 লিখতে পারস। তবে তোর লিস্টে ছয়জনের বেশি মেয়ে থাকলে এটাও ছয়বার আউটপুট দেখিয়ে বন্ধ হয়ে যাবে। তোর সন্দেহ থাকলে, <a href="http://www.jhankarmahbub.com/console">
+                                    www.jhankarmahbub.com/console-</a>এ গিয়ে প্রোগ্রাম লিখে Run করে দেখ। এখন arrayর মধ্যে
+                                    যত উপাদান আছে, ততবার for লুপ চালানোর জন্য for লুপের মাঝখানের শর্ত এমনভাবে লিখতে হবে,
+                                    যাতে সেটা arrayর মধ্যে উপাদান সংখ্যার ওপর নির্ভর করে। সে জন্য i
+                                    < 4 বা i < 6 বা i < 34 না লিখে i < girls.length লিখবি। এখানে girls.length বলতে girls নামক arrayর মধ্যে মোট উপাদান সংখ্যাকে
+                                        বুঝানো হয়েছে। এখন i-এর মান তুলনা করতে গেলে দেখবে i-এর মান arrayর মধ্যে উপাদানের সংখ্যার
+                                        চাইতে ছোট কি না। </p>
+
+
+                                        <p>তোর girls নামক arrayর মধ্যে দশজন মেয়ে থাকলে girls.length-এর মান 10 হবে। তখন i
+                                            < girls.length যাচাই করার সময় তুলনা করবে i-এর মান girls.length-এর মান অর্থাৎ 10-এর চাইতে ছোট কি না। আর যতক্ষণ 10-এর চাইতে
+                                                ছোট থাকবে ততক্ষণ পর্যন্ত for লুপ চলতে থাকবে। একইভাবে girls নামক arrayর মধ্যে
+                                                ষোলোজন মেয়ে থাকলে i < girls.length যাচাই করার সময় দেখবে i এর মান girls.length
+                                                অর্থাৎ 16 এর চাইতে ছোট কিনা। যতক্ষণ 16-এর চাইতে ছোট থাকবে ততক্ষণ পর্যন্ত for
+                                                লুপ চলতে থাকবে। তাহলে দেখা যাচ্ছে i < girls.length শর্ত হিসেবে ব্যবহার করলে,
+                                                arrayর মধ্যে যত উপাদান থাকবে ততবার for লুপ চলবে।</p>
+
+                                                <pre><code>var girls = ["amina", "jamina", "kamina", "pabina", "lamina", "samina"]; 
+
+for( var i = 0 ; i < girls.length; i++ ){
+    console.log("propose a girl");
+}
+</code></pre>
+                                                <p>ওপরের কোড রান করলে propose a girl ছয়বার আউটপুট দিবে। আর তোর girls নামক array-তে
+                                                    পঁয়ত্রিশজন মেয়ে থাকলে পঁয়ত্রিশবার আউটপুট দিবে। </p>
+
+                                                <h2>প্রপোজে মেলায় প্রেম, লজ্জায় নিঃসঙ্গতা </h2>
+                                                <p>প্রপোজ করার কাজটা কিন্তু কেয়ারফুলভাবে করতে হবে। প্যাঁচগোছ লাগায় ফেলবি না।
+                                                    জামিনাকে প্রপোজ করতে গিয়ে ভুল করে আমিনার নাম বলে দিলে ফ্যাসাদে পড়ে যাবি।
+                                                    তাই প্রতিবার প্রপোজ করার সময়, যাকে প্রপোজ করবি তার নাম ভালো করে খেয়াল
+                                                    করবি। সেটা করার জন্য, সেকেন্ড ব্র্যাকেটের ভিতরে একটু মডিফাই করে নিচের
+                                                    মতো লিখবি— </p>
+                                                <pre><code>var girls = ["amina", "jamina", "kamina", "pabina"];
+
+for( var i = 0 ; i < girls.length; i++ ){
+    var aGirl = girls[ i ];
+    console.log( aGirl ); 
+}
+</code></pre>
+
+                                                <h2>for লুপ কীভাবে কাজ করে</h2>
+
+                                                <p>লুপ শুরু হলেই, সবার আগে for-এর পরে ব্র্যাকেটের ভিতরের প্রথম অংশের কাছে যাবে।
+                                                    সেখানে var i = 0 আছে। অর্থাৎ i নামে একটা ভ্যারিয়েবল ডিক্লেয়ার করা হইছে
+                                                    যার মান শূন্য। তারপর for লুপের সেকেন্ড অংশের কাছে যাবে। সেখানে তুলনা
+                                                    করে দেখবে i-এর মান girls.length-এর চাইতে ছোট কি না। যেহেতু girls নামক
+                                                    arrayর মধ্যে চারজন মেয়ে আছে, সেহেতু তুলনা করে দেখবে i-এর মান 4-এর চাইতে
+                                                    ছোট কি না। শূন্য যেহেতু 4-এর চাইতে ছোট অর্থাৎ লুপের শর্ত সত্য, সেহেতু
+                                                    for লুপের সেকেন্ড ব্র্যাকেটের ভিতরে যাবে। </p>
+                                                <p>লুপের মধ্যে সেকেন্ড ব্র্যাকেটের ভিতরে প্রথম লাইনে সমান চিহ্নের ডান পাশে girls[i]
+                                                    আছে। এখন i-এর মান 0, তাই ডানপাশের অংশে i-এর পরিবর্তে i-এর মান বসায় দিলে
+                                                    girls[0] দেখতে পাবি। girls[0] মানে girls নামক arrayর ভিতরে 0 পজিশনের
+                                                    উপাদান। </p>
+                                                <p>কোনো একটা arrayর প্রথম উপাদানকে 0 পজিশনের উপাদান বলে। এখন girls নামক arrayর
+                                                    দিকে তাকালে সহজেই বুঝতে পারবি, 0 পজিশনে (সবার প্রথমে) আছে আমিনা। তাই
+                                                    তুই আমিনাকে পাবি। আমিনাকে পাওয়ার পর aGirl ভ্যারিয়েবলের মান হবে আমিনা।
+                                                    প্রথম লাইনের কাজ শেষ। তারপর সেকেন্ড লাইনে console.log(aGirl) দেখে aGirl
+                                                    ভ্যারিয়েবলের মান আউটপুট দিয়ে দিবে। যেহেতু aGirl ভ্যারিয়েবলের মান আমিনা,
+                                                    সেহেতু আমিনাকে আউটপুট হিসেবে পাবি। ব্যস, সেকেন্ড ব্র্যাকেটের ভিতরের কাজ
+                                                    একবার করা হয়ে গেল। </p>
+                                                <p>লুপ একবার শেষ হয়ে গেলে, সে for লুপের থার্ড অংশের কাছে গিয়ে দেখবে i++ অর্থাৎ
+                                                    i-এর মান এক বেড়ে 0 থেকে 1 হবে। তারপর for লুপের সেকেন্ড পার্টের কাছে এসে
+                                                    i
+                                                    < girls.length দেখবে। girls নামক array-তে চারজন মেয়ে আছে। অর্থাৎ girls.length-এর মান 4, যা থেকে i-এর মান ছোট। তাই for লুপের
+                                                        সেকেন্ড ব্র্যাকেটের ভেতরে গিয়ে আবারও প্রথম লাইনের ডানপাশে girls [ i]
+                                                        দেখবে। যেহেতু i-এর মান 1, সেহেতু girls নামক array-র 1 পজিশনে জামিনাকে
+                                                        দেখবে। জামিনাকে পাওয়ার পর aGirl ভ্যারিয়েবলের মান হবে জামিনা। </p>
+                                                        <p>এইভাবে প্রত্যেকবার i-এর নতুন একটা মান হবে এবং grils নামক arrayর মধ্যে
+                                                            i-এর মান যতই হোক না কেন সেই পজিশনে কে আছে তাকে খুঁজে বের করবে।
+                                                            তার মানে, i-এর মান 2 হলে girls নামক array-তে কামিনাকে পাবে আর
+                                                            i-এর মান 3 হলে girls নামক array-তে পাবিনাকে পাবে। </p>
+
+                                                        <p>জাস্ট মনে রাখবি, girls[i] লিখে, girls নামক arrayর মধ্যে i-এর মান
+                                                            যতই হোক না কেন সে পজিশনে যে আছে তা খুঁজে বের করবে। </p>
+
+
+
+
+
+                                                        <h2>তুমি সুন্দর তাই প্রপোজ করি</h2>
+                                                        <p>এখন আরেকটা কাজ কর। যেহেতু প্রপোজ করবি একটু প্রশংসা করেই প্রপোজ কর।
+                                                            সো, সেকেন্ড ব্র্যাকেটের মধ্যে আরেকটা console.log যোগ করে দিতে
+                                                            পারস। একত্রে একাধিক আউটপুট দেখতে চাইলে console.log-এর মধ্যেও
+                                                            দুইটা জিনিসের মধ্যে একটা করে কমা দিয়ে দিবি। এখন, নিচের কোড টাইপ
+                                                            করে আউটপুট দেখ- </p>
+
+                                                        <pre><code>var girls = ["amina", "jamina", "kamina", "pabina"];
+for( var i = 0 ; i < girls.length ; i++ ){
+    var aGirl = girls[ i ];
+    console.log( aGirl, " you are beautiful. " ); 
+}
+</code></pre>
+
+                                                        <p>ওপরের কোড চার লাইন আউটপুট দেখাবে। প্রথম লাইনে থাকবে amina you are
+                                                            beautiful. দ্বিতীয় লাইনে থাকবে jamina you are beautiful. তৃতীয়
+                                                            লাইনে থাকবে kamina you are beautiful. এবং শেষ লাইনে থাকবে pabina
+                                                            you are beautiful.
+                                                        </p>
+
+                                                        <p style="color:#5b5956;">কাউকে you are beautiful বলে নরমে শরমে প্রপোজ করা ভালো। তবে তুই চাইলে
+                                                            ডাইরেক্ট অ্যাকশনেও যেতে পারিস। অর্থাৎ, আগের কোডটাতে you are beautiful
+                                                            কথাটা চেইঞ্জ করে I Love You লিখে দেখ কী হয়।
+
+                                                        </p>
+
+                                                        <div class="instruct">
+                                                            <div class="col-xs-11">
+                                                                <a href="#">
+                                                                    <h1>array.length শর্তে দিলে, সব উপাদানের দেখা মিলে
+                                                                    </h1>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                </div>
+
+                <div class="nav1">
+                    <div class="col-xs-4 noleft noright">
+                        <div class="prev">
+                            <a href="">
+                                <span>
+                                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                </span>Av‡Mi P¨vÞvi</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <h6>Chapter 1 of 17</h6>
+                    </div>
+                    <div class="col-xs-4 noleft noright">
+                        <div class="next">
+                            <a href="">c‡ii P¨vÞvi
+                                <span>
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-4">
+                <div class="chapter">
+                    <h1 class="heading">Chapter</h1>
+                    <div class="list1">
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রোগ্রাম খায়, পরে না মাথায় দেয়?</a>
+                            </li>
+                            <li>
+                                <a href="variable.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>Variable বুঝলে, হবে না পয়সা ব্যয়</a>
+                            </li>
+                            <li>
+                                <a href="programming.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রোগ্রামিং প্রাক্টিস করে রাত পোহালে</a>
+                            </li>
+                            <li>
+                                <a href="string.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>String এর তালে নাচবে গরু গোয়ালে</a>
+                            </li>
+                            <li>
+                                <a href="if-else.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>নানির if-else বুঝে লাফায় নানা</a>
+                            </li>
+                            <li>
+                                <a href="array.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>বিস্কুটের Array খায় বিড়াল</a>
+                            </li>
+                            <li>
+                                <a href="while-loop.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>while লুপকে করলে মালিশ</a>
+                            </li>
+                            <li>
+                                <a href="for-loop.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>For লুপ ডাকবে সালিশ</a>
+                            </li>
+                            <li>
+                                <a href="প্রেমের-প্রোপোজ-করলে-গোটা-দশ-হালি.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রেমের প্রোপোজ করলে গোটা দশ হালি</a>
+                            </li>
+                            <li>
+                                <a href="function.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>function বুঝবে না- কোনটা বউ কোনটা হালি</a>
+                            </li>
+                            <li>
+                                <a href="loan.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>দিগুন টাকা ধার করে পালালে </a>
+                            </li>
+                            <li>
+                                <a href="programming-language.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রোগ্রামিং ল্যাঙ্গুয়েজ খুঁজবে মামা শিয়ালে </a>
+                            </li>
+                            <li>
+                                <a href="bijoy.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>হাসবে হাব্লু বিজয় মিছিলে </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subscribe">
+                    <h1 class="heading">আড্ডায় যুক্ত হও</h1>
+                    <!-- <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Your email adress" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="submit">
+                                <a href="#">SUBMIT</a>
+                            </div>
+                        </form> -->
+                    <div class="fbpage">
+                        <div class="fb-page" data-href="https://www.facebook.com/jhankarmahbubshow/" data-small-header="false" data-adapt-container-width="true"
+                            data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/jhankarmahbubshow/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/jhankarmahbubshow/">Jhankar Mahbub</a>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightb">
+                    <h1 class="heading">হাবলুদের জন্য প্রোগ্রামিং</h1>
+                    <div class="book">
+                        <img src="img/book3.png" class="img-responsive book3">
+                        <a href="">
+                            <img src="img/buy.png" class="img-responsive buy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="social">
+                <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>হাব্লুদের জন্য প্রোগ্রামিং © 2017</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</body>
+
+</html>
