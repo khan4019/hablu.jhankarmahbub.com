@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>for লুপ ডাকবে সালিশ </title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -13,6 +13,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
     <link href="css/xcode.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
@@ -44,7 +45,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="index.html">
                             <img src="img/logo.PNG">
                         </a>
                     </div>
@@ -176,11 +177,9 @@
                                         অর্থাৎ প্রথমেই i-এর মান 0 সেট করা হইছে। তাই i-এর মান 0 থেকে শুরু হইছে। তুই যদি 1
                                         থেকে শুরু করতে চাস, তাহলে for লুপের প্রথম অংশ পরিবর্তন করে var i = 1 করে দে। </p>
 
-                                    <p>for( var i = 1 ; i
-                                        < 10 ; i++ ){ <br>
-                                            console.log(i);
-                                            <br> }
-                                    </p>
+                                    <pre><code>for( var i = 1 ; i
+< 10 ; i++ ){
+console.log(i);</code></pre>
 
                                     <p style="color:#5b5956;">এইবার আউটপুট হিসেবে 1, 2, 3, 4, 5, 6, 7, 8, 9 দেখাবে।</p>
                                     <p>আরেকটা সমস্যা রয়ে গেছে। তুই চাইছিলি 1 থেকে 10 পর্যন্ত লিখতে কিন্তু আউটপুট দেখাচ্ছে 9
@@ -193,11 +192,10 @@
                                                 < 10-কে পরিবর্তন করে i <=1 0 লিখতে হবে। একটা অপেক্ষাকৃত ছোট চিহ্ন (less than sign) দিয়ে সাথে সাথে একটা সমান চিহ্ন দিতে হবে।
                                                     তাহলে i-এর মান 10-এর ছোট বা সমান হলে for লুপের সেকেন্ড ব্র্যাকেটের ভিতরে
                                                     যাবে। </p>
-                                                    <p>for( var i = 1 ; i
-                                                        <=1 0 ; i++ ){ <br>
-                                                            console.log(i);
-                                                            <br> }
-                                                    </p>
+<pre><code>for( var i = 1 ; i
+<=1 0 ; i++ ){ <br>
+console.log(i);
+}</code></pre> 
 
                                                     <p style="color:#5b5956;">ওপরের মতো করে লিখে Run বাটনে চাপ দিলে আউটপুট হিসেবে 1, 2, 3, 4, 5, 6,
                                                         7, 8, 9, 10 দেখাবে। </p>
@@ -244,39 +242,42 @@ console.log(joogFol); </code></pre>
                                                         রাতে সাতবার ছিনতাই করি। আজকে রাতে, তুই নাম্বার সাত। লাকি সেভেন। ছিনতাই
                                                         করার আগে আমার একটাই প্রশ্ন, “for লুপ কি জিনিস”। বলতে পারলে শুধু টাকাপয়সা
                                                         নিয়ে যাব আর না বলতে পারলে জামাকাপড়সহ সবকিছুই খুলে নিয়ে যাব। তখন টাকাপয়সার
-                                                        সাথে সাথে ইজ্জত হারানোর ভয়ে আমতা-আমতা করে বলবি— </p>
-                                                    <p style="color:#5b5956;">
+                                                        সাথে সাথে ইজ্জত হারানোর ভয়ে আমতা-আমতা করে বলবি।</p>
+                                                    <p style="color:#111111;">
                                                         <i>যে লুপ for দিয়ে লিখতে হয় এবং for-এর পরে তিনটা অংশ থাকে। প্রথম অংশে
                                                             একটা ভ্যারিয়েবল ডিক্লেয়ার করা হয়, মাঝখানের অংশে একটা শর্ত থাকে
                                                             এবং শেষ অংশে ভ্যারিয়েবলের মান এক এক করে বাড়ানো হয়। মাঝখানের শর্ত
-                                                            সত্য হলে লুপ চলবে আর শর্ত মিথ্যা হলে লুপের কাজ শেষ।</i>
+                                                            সত্য হলে লুপ চলবে আর শর্ত মিথ্যা হলে লুপের কাজ শেষ। এত কিছু কঠিন
+                                                            মনে হলে বলে দিবি- </i>
                                                     </p>
+
                                                     <div class="instruct">
                                                         <div class="col-xs-11">
                                                             <a href="#">
-                                                                <h1>এত কিছু কঠিন মনে হলে বলে দিবি- যে লুপ for দিয়ে লেখা হয়, সেটাই
-                                                                    for লুপ।
+
+                                                                <h1> যে লুপ for দিয়ে লেখা হয়, সেটাই for লুপ।
                                                                 </h1>
                                                             </a>
                                                         </div>
                                                     </div>
+
                 </div>
 
                 <div class="nav1">
                     <div class="col-xs-4 noleft noright">
                         <div class="prev">
-                            <a href="">
+                            <a href="while-loop.html">
                                 <span>
                                     <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                                </span>Av‡Mi P¨vÞvi</a>
+                                </span>আগের চ্যাপ্টার</a>
                         </div>
                     </div>
                     <div class="col-xs-4">
-                        <h6>Chapters 1 of 13</h6>
+                        <h6>Chapters 8 of 13</h6>
                     </div>
                     <div class="col-xs-4 noleft noright">
                         <div class="next">
-                            <a href="">c‡ii P¨vÞvi
+                            <a href="array-looping.html">পরের চ্যাপ্টার
                                 <span>
                                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
                                 </span>
@@ -284,11 +285,9 @@ console.log(joogFol); </code></pre>
                         </div>
                     </div>
                 </div>
-
-
             </div>
-            <div class="col-md-4">
 
+            <div class="col-md-4">
                 <div class="chapter">
                     <h1 class="heading">Chapters</h1>
                     <div class="list1">
@@ -337,9 +336,10 @@ console.log(joogFol); </code></pre>
                             </li>
                             <li>
                                 <a href="for-loop.html">
-                                    <span>
-                                        <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>For লুপ ডাকবে সালিশ</a>
+                                        <span style="color:rgba(255, 83, 51, 0.78);">
+                                                <i class="fa fa-book" aria-hidden="true"></i>
+                                            </span><span style="    font-size: 17px; color:rgba(255, 83, 51, 0.78);">For লুপ ডাকবে সালিশ</span> </a>
+
                             </li>
                             <li>
                                 <a href="array-looping.html">
@@ -351,7 +351,7 @@ console.log(joogFol); </code></pre>
                                 <a href="function.html">
                                     <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>function বুঝবে না- কোনটা বউ কোনটা হালি</a>
+                                    </span>function বুঝবে না কোনটা বউ কোনটা শালি</a>
                             </li>
                             <li>
                                 <a href="multiple-functions.html">
@@ -405,23 +405,22 @@ console.log(joogFol); </code></pre>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
     <footer>
         <div class="container">
             <div class="social">
-                <a href="">
+                <a href="https://www.facebook.com/JhankarMahbub">
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
-                <a href="">
+                <a href="https://www.youtube.com/jhankarmahbub">
                     <i class="fa fa-youtube-play" aria-hidden="true"></i>
                 </a>
-                <a href="">
+                <a href="googlepluslink">
                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
-                <a href="">
+                <a href="http://thatjsdude.com/">
                     <i class="fa fa-globe" aria-hidden="true"></i>
                 </a>
             </div>
@@ -430,7 +429,6 @@ console.log(joogFol); </code></pre>
             </div>
         </div>
     </footer>
-
 
     <script src="js/owl.carousel.min.js" type="text/javascript"></script>
     <script src="js/jquery.js"></script>

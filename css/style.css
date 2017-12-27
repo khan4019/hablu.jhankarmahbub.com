@@ -94,14 +94,12 @@ header {
     padding: 20px 10px;
     min-height: 175px;
 }
-
 .box2 .bgcolor .innerbox:hover{
     border-top: 3px solid #43a4ef;
 	background: #f8f8f8;
 	box-shadow: 0px 5px 10px #e0d7d7;
 	cursor: pointer;
-}
-	
+}	
 .box2 .bgcolor .innerbox h2 {
     color: #595959;
     float: left;
@@ -114,7 +112,6 @@ header {
     font-size: 14px;
     letter-spacing: 0.01em;
 }
-
 .box3 {
     margin: 20px 0;
 }
@@ -178,7 +175,6 @@ header {
 .slick-slide img {
     display: inline !important;
 }
-
 .box5 {
     padding: 20px 0;
 }
@@ -233,8 +229,7 @@ header {
     padding: 10px 10px 30px;
     text-align: left;
 }
-.box5 .inner5 #slider .item .person {
-    
+.box5 .inner5 #slider .item .person { 
 }
 .box5 h1 {
     font-size: 40px;
@@ -244,7 +239,6 @@ header {
     padding: 12px 0px 8px 0px;
     margin-top: 0;
 }
-
 .slick-dots li button:before {
     background-color: #000;
     border-radius: 50%;
@@ -259,7 +253,6 @@ header {
 }
 .comp {padding-top: 20px;}
 .comp img{height: 103px; width: 105px;}
-
 .box6 {
     padding: 10px 0;
 }
@@ -296,8 +289,6 @@ header {
 .box6 .inner6 .border6 .ques img {
     margin: 0 auto;
 }
-
-
 footer {
     padding: 10px 0;
     color: #fff;
@@ -335,7 +326,6 @@ footer .innerf .buttons a:hover {
     background-color: #fff;
     color: #015282;
 }
-
 .footer {
     background: #022242;
     color: #fff;
@@ -347,11 +337,9 @@ footer .innerf .buttons a:hover {
     color: #a1aab4;
     font-size: 14px;
 }
-
 .footer .fa-heart {
     color: #fb866a;
 }
-
 .footer a {
     color: #fb866a;
 }

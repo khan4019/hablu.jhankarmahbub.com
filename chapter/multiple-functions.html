@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>দ্বিগুণ টাকা ধার করে পালালে</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
-    <link href="css/xcode.css" rel="stylesheet">    
+    <link href="css/xcode.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
@@ -44,7 +45,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="index.html">
                             <img src="img/logo.PNG">
                         </a>
                     </div>
@@ -103,7 +104,7 @@
                         নাম দে দুই গুণ কর (duiGoonKor)। কোনো একটা সংখ্যা দিয়ে এই ফাংশনকে কল করলে সেটার মান ডাবল করে return
                         করে দিবে। এই দ্বিগুণ কর ফাংশনটা নিচের মতো করে লেখ-</p>
 
-<pre><code>function duiGoonKor(songkha){
+                    <pre><code>function duiGoonKor(songkha){
     var goonFol = songkha * 2;
     return goonFol;
 }
@@ -123,54 +124,69 @@
                         চিন্তা করা লাগবে না; বরং ছোট একটা অংশ নিবি, সেটার কাজ হয়ে গেলে তার পরবর্তী ছোট অংশ নিয়ে কাজ শুরু
                         করবি। এখন দ্বিগুণ টাকা ধার করার পুরো প্রোগ্রামটাকে নিচের মতো করে ছয়টা ছোট ছোট অংশে ভাগ করবি-</p>
 
-                   <br> <ul>
+                    <br>
+                    <ul>
                         <li>
-                            ১. <i>প্রথম অংশে চাল আর ডালের দাম যোগ করার জন্য যোগ কর (joogKor) ফাংশন লিখবি। </i> </li>
+                            ১.
+                            <i>প্রথম অংশে চাল আর ডালের দাম যোগ করার জন্য যোগ কর (joogKor) ফাংশন লিখবি। </i>
+                        </li>
                         <br>
                         <li>
-                            ২. <i>কোনো একটা সংখ্যাকে দুইগুণ করার জন্য দুই গুণ কর (duiGoonKor) ফাংশন লিখবি। </i> </li>
+                            ২.
+                            <i>কোনো একটা সংখ্যাকে দুইগুণ করার জন্য দুই গুণ কর (duiGoonKor) ফাংশন লিখবি। </i>
+                        </li>
                         <br>
                         <li>
-                            ৩. <i>ধার চাওয়ার জন্য ধার দে (dharDey) নামে একটা ফাংশন লিখবি। যেখানে ইনপুট হিসেবে নিবি ধারের
-                            পরিমাণ (dharAmount)। তারপর এই ফাংশনের ভিতরে ফ্রেন্ডের টাকা (frienderTaka) নামে একটা ভ্যারিয়েবল
-                            থাকবে। এই ভ্যারিয়েবলের মান হবে তুই যত টাকা ধার চাইবি তার সমান। পরের লাইনে frienderTaka ভ্যারিয়েবলকে
-                            রিটার্ন করে দিবি।</i> 
+                            ৩.
+                            <i>ধার চাওয়ার জন্য ধার দে (dharDey) নামে একটা ফাংশন লিখবি। যেখানে ইনপুট হিসেবে নিবি ধারের পরিমাণ
+                                (dharAmount)। তারপর এই ফাংশনের ভিতরে ফ্রেন্ডের টাকা (frienderTaka) নামে একটা ভ্যারিয়েবল থাকবে।
+                                এই ভ্যারিয়েবলের মান হবে তুই যত টাকা ধার চাইবি তার সমান। পরের লাইনে frienderTaka ভ্যারিয়েবলকে
+                                রিটার্ন করে দিবি।</i>
                             <br>
                             <br> </li>
-                       <pre><code>function dharDey(dharAmount){
+                        <pre><code>function dharDey(dharAmount){
     var frienderTaka = dharAmount;
     return frienderTaka;
 }</code></pre>
-                        <li><br>
-                            ৪. <i>এখন চালের দাম এবং ডালের দাম নামে দুইটা ভ্যারিয়েবল ডিক্লেয়ার করে মান সেট করবি। এই দুইটা
-                            ভ্যারিয়েবলকে ইনপুট হিসেবে ব্যবহার করে যোগকর (joogKor) ফাংশনকে কল করবি। এই joogKor ফাংশন থেকে
-                            যে আউটপুট পাবি সেটা টোটাল (total) ভ্যারিয়েবলে রাখবি। তাহলে total ভ্যারিয়েবলের মান হবে চালের দাম
-                            আর ডালের দাম মিলে মোট যত টাকা হয়। </i> </li>
+                        <li>
+                            <br> ৪.
+                            <i>এখন চালের দাম এবং ডালের দাম নামে দুইটা ভ্যারিয়েবল ডিক্লেয়ার করে মান সেট করবি। এই দুইটা ভ্যারিয়েবলকে
+                                ইনপুট হিসেবে ব্যবহার করে যোগকর (joogKor) ফাংশনকে কল করবি। এই joogKor ফাংশন থেকে যে আউটপুট
+                                পাবি সেটা টোটাল (total) ভ্যারিয়েবলে রাখবি। তাহলে total ভ্যারিয়েবলের মান হবে চালের দাম আর
+                                ডালের দাম মিলে মোট যত টাকা হয়। </i>
+                        </li>
                         <br>
                         <pre><code>var chalerDam = 28;
 var dalerDam = 33;
 var total = joogKor(chalerDam, dalerDam);
-</code></pre> <br>
+</code></pre>
+                        <br>
                         <li>
-                            ৫. <i>এতুই যেহেতু total টাকার দ্বিগুণ পরিমাণ ধার পাইতে চাস, সেহেতু total ভ্যারিয়েবলকে ইনপুট
-                            হিসেবে ব্যবহার করে দুই গুণ কর (duiGoonKor) ফাংশনকে কল করে, total ভ্যারিয়েবলকে দ্বিগুণ করে নে।
-                            এখন duiGoonKor ফাংশনের কল করলে যে আউটপুট পাওয়া যাবে, সেটাই হবে ধার লাগবে (dharLagbe) ভ্যারিয়েবলের
-                            মান।</i> 
+                            ৫.
+                            <i>এতুই যেহেতু total টাকার দ্বিগুণ পরিমাণ ধার পাইতে চাস, সেহেতু total ভ্যারিয়েবলকে ইনপুট হিসেবে
+                                ব্যবহার করে দুই গুণ কর (duiGoonKor) ফাংশনকে কল করে, total ভ্যারিয়েবলকে দ্বিগুণ করে নে। এখন
+                                duiGoonKor ফাংশনের কল করলে যে আউটপুট পাওয়া যাবে, সেটাই হবে ধার লাগবে (dharLagbe) ভ্যারিয়েবলের
+                                মান।
+                            </i>
                             <p>var dharLagbe = duiGoonKor(total);</p>
                         </li>
                         <li>
-                            ৬. <i>সবশেষে dharLagbe ভ্যারিয়েবলকে ইনপুট হিসেবে ব্যবহার করে ধার দে (dharDey) ফাংশনকে কল কর।
-                            যে আউটপুট পাবি, সেটা টাকা পাইছি (takaPaichi) ভ্যারিয়েবলে রাখ। সবশেষে takaPaichi ভ্যারিয়েবলকে
-                            console.log করে দে।</i> <br> <br>
+                            ৬.
+                            <i>সবশেষে dharLagbe ভ্যারিয়েবলকে ইনপুট হিসেবে ব্যবহার করে ধার দে (dharDey) ফাংশনকে কল কর। যে আউটপুট
+                                পাবি, সেটা টাকা পাইছি (takaPaichi) ভ্যারিয়েবলে রাখ। সবশেষে takaPaichi ভ্যারিয়েবলকে console.log
+                                করে দে।</i>
+                            <br>
+                            <br>
                             <pre><code>var takaPaichi = dharDey(dharLagbe);
 console.log(takaPaichi);
-</code></pre><br>
+</code></pre>
+                            <br>
                         </li>
                     </ul>
 
                     <p>এখন দ্বিগুণ টাকা ধার পাওয়ার পুরা প্রোগ্রামটা একসাথে দেখ-</p>
 
-<pre><code>function joogKor(first, second){
+                    <pre><code>function joogKor(first, second){
  var joogFol = first + second;
  return joogFol;
 }
@@ -190,10 +206,10 @@ var dalerDam = 33;
 
 var total = joogKor(chalerDam, dalerDam);
 var dharLagbe = duiGoonKor(total);
-var takaPaichi = dharDey(dharLagbe);</code></pre> 
+var takaPaichi = dharDey(dharLagbe);</code></pre>
 
-
-                    <p>পুরো কোড  <a href="http://www.jhankarmahbub.com/console"> www.jhankarmahbub.com/console-</a>এ গিয়ে লিখলে আউটপুট হিসেবে 122 দেখাবে। দ্বিগুণ টাকা ধার চাওয়ার
+                    <p>পুরো কোড
+                        <a href="http://www.jhankarmahbub.com/console"> www.jhankarmahbub.com/console-</a>এ গিয়ে লিখলে আউটপুট হিসেবে 122 দেখাবে। দ্বিগুণ টাকা ধার চাওয়ার
                         প্রোগ্রামটাকে ছয়টা অংশে ভাগ করার স্টেপগুলা কমপক্ষে তিনবার পড়বি। প্রথমবার পড়ে বুঝে ফেললেও তিনবার পড়বি।
                         বড় প্রোগ্রামকে ছোট ছোট ভাগ করে প্রোগ্রামিং করার কনসেপ্ট ধরতে পারলে তুই অর্ধেক প্রোগ্রামার হয়ে যাবি।
                         কারণ দুনিয়ার সব প্রোগ্রাম, সব সফটওয়্যারই ছোট ছোট অংশে ভাগ করে তৈরি করা হয়। </p>
@@ -205,20 +221,26 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                         ইনপুট হিসেবে নিবি। তারপর takaDharDey ফাংশনের ভিতর থেকেই joogKor, duiGoonKor, dharDey ফাংশনকে নিচের
                         মতো করে কল করবি। সবশেষে takaPaichi ভ্যারিয়েবলকে আউটপুট হিসেবে রিটার্ন করে দে। </p>
 
-                       <pre><code>function takaDorkar(first, second){
+                    <pre><code>function takaDorkar(first, second){
     var total = joogKor(first, second);
     var dharLagbe = duiGoonKor(total);
     var takaPaichi = dharDey(dharLagbe);
     return takaPaichi;
-}</code></pre> 
+}</code></pre>
 
 
                     <p>এখন তুই takarDorkar (28, 33) লিখে কল করলে 122 আউটপুট দিবে।</p>
 
                     <h2>কত সেকেন্ডে কত ঘণ্টা </h2>
-                    <p>একটা ফাংশনের ভিতরে চাইলে একাধিক কাজও করতে পারস। ধর, তুই একটা ফাংশন লিখতে চাস। যেটাতে ইনপুট হিসেবে নিবি সেকেন্ড (seconds) তারপর সে বলে দিবে কত ঘণ্টা হয়। এই ফাংশনের নাম দিলি সেকেন্ড টু ঘণ্টা (secondsToHours)| </p>
+                    <p>একটা ফাংশনের ভিতরে চাইলে একাধিক কাজও করতে পারস। ধর, তুই একটা ফাংশন লিখতে চাস। যেটাতে ইনপুট হিসেবে নিবি
+                        সেকেন্ড (seconds) তারপর সে বলে দিবে কত ঘণ্টা হয়। এই ফাংশনের নাম দিলি সেকেন্ড টু ঘণ্টা (secondsToHours)|
+                        </p>
 
-                    <p>এই ফাংশনের ভিতরে প্রথমেই মিনিট (minutes) নামে একটা ভ্যারিয়েবল ডিক্লেয়ার করবি যার মান হবে সেকেন্ডকে 60 দিয়ে ভাগ করলে ভাগফল যত হয়। কারণ সেকেন্ডকে 60 দিয়ে ভাগ করলে মিনিট পাওয়া যায়। তার পরের লাইনে মিনিটকে (minutes) ঘণ্টায় রূপান্তর করবি। মিনিটকে ঘণ্টায় (hours) রূপান্তর করতে হলে কত দিয়ে ভাগ করতে হয়, আমি তোকে বলে দিব না। তোর আম্মুকে জিজ্ঞেস কর। সবশেষে যত ঘণ্টা হবে, সেটা আউটপুট হিসেবে return করে দে। ফাংশনটা নিচের মতো হবে- </p>
+                    <p>এই ফাংশনের ভিতরে প্রথমেই মিনিট (minutes) নামে একটা ভ্যারিয়েবল ডিক্লেয়ার করবি যার মান হবে সেকেন্ডকে 60
+                        দিয়ে ভাগ করলে ভাগফল যত হয়। কারণ সেকেন্ডকে 60 দিয়ে ভাগ করলে মিনিট পাওয়া যায়। তার পরের লাইনে মিনিটকে
+                        (minutes) ঘণ্টায় রূপান্তর করবি। মিনিটকে ঘণ্টায় (hours) রূপান্তর করতে হলে কত দিয়ে ভাগ করতে হয়, আমি
+                        তোকে বলে দিব না। তোর আম্মুকে জিজ্ঞেস কর। সবশেষে যত ঘণ্টা হবে, সেটা আউটপুট হিসেবে return করে দে। ফাংশনটা
+                        নিচের মতো হবে- </p>
 
                     <pre><code>function secondsToHours (seconds){
  var minutes = seconds / 60;
@@ -227,7 +249,8 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
 }
 </code></pre>
 
-                    <p>এখন secondToHours ফাংশনকে 7200 ইনপুট দিয়ে কল করলে আউটপুট হিসেবে 2 দিবে। কারণ 7200 সেকেন্ডে দুই ঘণ্টা হয়।</p>
+                    <p>এখন secondToHours ফাংশনকে 7200 ইনপুট দিয়ে কল করলে আউটপুট হিসেবে 2 দিবে। কারণ 7200 সেকেন্ডে দুই ঘণ্টা
+                        হয়।</p>
 
                     <div class="instruct">
                         <div class="col-xs-11">
@@ -242,18 +265,18 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                 <div class="nav1">
                     <div class="col-xs-4 noleft noright">
                         <div class="prev">
-                            <a href="">
+                            <a href="function.html">
                                 <span>
                                     <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                                </span>Av‡Mi P¨vÞvi</a>
+                                </span>আগের চ্যাপ্টার</a>
                         </div>
                     </div>
                     <div class="col-xs-4">
-                        <h6>Chapters 1 of 13</h6>
+                        <h6>Chapters 11 of 13</h6>
                     </div>
                     <div class="col-xs-4 noleft noright">
                         <div class="next">
-                            <a href="">c‡ii P¨vÞvi
+                            <a href="programming-language.html">পরের চ্যাপ্টার
                                 <span>
                                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
                                 </span>
@@ -265,27 +288,91 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
 
             </div>
             <div class="col-md-4">
-                    <div class="chapter">
-                            <h1 class="heading">Chapters</h1>
-                            <div class="list1">
-                                <ul>
-                                    <li><a href="index.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>প্রোগ্রাম খায়, পরে না মাথায় দেয়?</a></li>
-                                    <li><a href="variable.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>Variable বুঝলে, হবে না পয়সা ব্যয়</a></li>
-                                    <li><a href="programming.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>প্রোগ্রামিং প্রাক্টিস করে রাত পোহালে</a></li>
-                                    <li><a href="string.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>String এর তালে নাচবে গরু গোয়ালে</a></li>
-                                    <li><a href="if-else.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>নানির if-else বুঝে লাফায় নানা</a></li>
-                                    <li><a href="array.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>বিস্কুটের Array খায় বিড়াল</a></li>
-                                    <li><a href="while-loop.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>while লুপকে করলে মালিশ</a></li>
-                                    <li><a href="for-loop.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>For লুপ ডাকবে সালিশ</a></li>
-                                    <li><a href="array-looping.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>প্রেমের প্রোপোজ করলে গোটা দশ হালি</a></li>
-                                    <li><a href="function.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>function বুঝবে না- কোনটা বউ কোনটা হালি</a></li>
-                                    <li><a href="multiple-functions.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>দিগুন টাকা ধার করে পালালে </a></li>
-                                    <li><a href="programming-language.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>প্রোগ্রামিং ল্যাঙ্গুয়েজ খুঁজবে মামা শিয়ালে </a></li>
-                                    <li><a href="bijoy.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>হাসবে হাব্লু বিজয় মিছিলে </a></li>
-                                </ul>
-                            </div>
-                        </div>
-
+                <div class="chapter">
+                    <h1 class="heading">Chapters</h1>
+                    <div class="list1">
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রোগ্রাম খায়, পরে না মাথায় দেয়?</a>
+                            </li>
+                            <li>
+                                <a href="variable.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>Variable বুঝলে, হবে না পয়সা ব্যয়</a>
+                            </li>
+                            <li>
+                                <a href="programming.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রোগ্রামিং প্রাক্টিস করে রাত পোহালে</a>
+                            </li>
+                            <li>
+                                <a href="string.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>String এর তালে নাচবে গরু গোয়ালে</a>
+                            </li>
+                            <li>
+                                <a href="if-else.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>নানির if-else বুঝে লাফায় নানা</a>
+                            </li>
+                            <li>
+                                <a href="array.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>বিস্কুটের Array খায় বিড়াল</a>
+                            </li>
+                            <li>
+                                <a href="while-loop.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>while লুপকে করলে মালিশ</a>
+                            </li>
+                            <li>
+                                <a href="for-loop.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>For লুপ ডাকবে সালিশ</a>
+                            </li>
+                            <li>
+                                <a href="array-looping.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রেমের প্রোপোজ করলে গোটা দশ হালি</a>
+                            </li>
+                            <li>
+                                <a href="function.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>function বুঝবে না কোনটা বউ কোনটা শালি</a>
+                            </li>
+                            <li>
+                                <a href="multiple-functions.html">
+                                        <span style="color:rgba(255, 83, 51, 0.78);">
+                                                <i class="fa fa-book" aria-hidden="true"></i>
+                                            </span><span style="font-size: 17px; color:rgba(255, 83, 51, 0.78);">দিগুন টাকা ধার করে পালালে/span> </a>
+                            </li>
+                            <li>
+                                <a href="programming-language.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>প্রোগ্রামিং ল্যাঙ্গুয়েজ খুঁজবে মামা শিয়ালে </a>
+                            </li>
+                            <li>
+                                <a href="bijoy.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>হাসবে হাব্লু বিজয় মিছিলে </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="subscribe">
                     <h1 class="heading">আড্ডায় যুক্ত হও</h1>
                     <!-- <form>
@@ -323,16 +410,16 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
     <footer>
         <div class="container">
             <div class="social">
-                <a href="">
+                <a href="https://www.facebook.com/JhankarMahbub">
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
-                <a href="">
+                <a href="https://www.youtube.com/jhankarmahbub">
                     <i class="fa fa-youtube-play" aria-hidden="true"></i>
                 </a>
-                <a href="">
+                <a href="googlepluslink">
                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
-                <a href="">
+                <a href="http://thatjsdude.com/">
                     <i class="fa fa-globe" aria-hidden="true"></i>
                 </a>
             </div>
