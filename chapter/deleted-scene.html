@@ -58,7 +58,7 @@
                                 <a href="index.html">home</a>
                             </li>
                             <li>
-                                    <a href="http://www.jhankarmahbub.com/tips/" target="_blank">tips </a>
+                                <a href="http://www.jhankarmahbub.com/tips/" target="_blank">tips </a>
                             </li>
                             <li>
                                 <a href="http://www.jhankarmahbub.com/web/basic/" target="_blank">web </a>
@@ -82,10 +82,11 @@
     </header>
 
     <div class="banner .visible-xs-block, hidden-xs .btitle: .visible-sm-block, hidden-sm">
-            <img src="img/banner.png" class="img-responsive">
-            <div class="btitle">
-                <h1>Deleted Scene</h1></div>
+        <img src="img/banner.png" class="img-responsive">
+        <div class="btitle">
+            <h1>Deleted Scene</h1>
         </div>
+    </div>
 
 
     <div class="section1">
@@ -187,8 +188,8 @@ console.log(maxAge);
                         <div class="prev">
                             <a href="bijoy.html">
                                 <span>
-                                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                                </span> মুল পাতা </a>
+                                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                                </span> মুল পাতা &nbsp; </a>
                         </div>
 
                     </div>
@@ -197,9 +198,10 @@ console.log(maxAge);
                     </div>
                     <div class="col-xs-4 noleft noright">
                         <div class="next">
-                            <a href="https://www.rokomari.com/book/128993/">পরের চ্যাপ্টার
+                                <a style=" background-color: #007bff;
+                                color: #f6f6f6;;" href="https://www.rokomari.com/book/128993/">পরের চ্যাপ্টার
                                 <span>
-                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
                                 </span>
                             </a>
                         </div>
@@ -212,13 +214,12 @@ console.log(maxAge);
                     <h1 class="heading">Chapters</h1>
                     <div class="list1">
                         <ul>
-                            <li style="background-color: #fbfbfb;box-shadow: 0px 5px 5px 1px #dfdfdf;">
+
+                            <li>
                                 <a href="index.html">
-                                    <span style="color:#ff7b62;">
+                                    <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                        <span style="    font-size: 17px; color:#ff7b62;">প্রোগ্রাম খায়, পরে না মাথায় দেয়? </span>
-                                    </span>
-                                </a>
+                                    </span>প্রোগ্রাম খায়, পরে না মাথায় দেয়?</a>
                             </li>
                             <li>
                                 <a href="variable.html">
@@ -292,11 +293,14 @@ console.log(maxAge);
                                         <i class="fa fa-book" aria-hidden="true"></i>
                                     </span>হাসবে হাবলু বিজয় মিছিলে </a>
                             </li>
-                            <li>
+
+                            <li style="background-color: #fbfbfb;box-shadow: 0px 5px 5px 1px #dfdfdf;">
                                 <a href="deleted-scene.html">
-                                    <span>
+                                    <span style="color:#ff7b62;">
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>Deleted Scene</a>
+                                        <span style="    font-size: 17px; color:#ff7b62;">Deleted Scene </span>
+                                    </span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -378,14 +382,17 @@ console.log(maxAge);
         hljs.initHighlightingOnLoad();
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40601505-5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40601505-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-40601505-5');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-40601505-5');
+    </script>
 
 
 </body>
