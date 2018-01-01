@@ -45,7 +45,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="../index.html">
                             <img src="img/logo.PNG">
                         </a>
                     </div>
@@ -82,9 +82,11 @@
         </div>
     </header>
 
-    <div class="banner">
-        <img src="img/banner.png" class="img-responsive">
-    </div>
+    <div class="banner .visible-xs-block, hidden-xs .btitle: .visible-sm-block, hidden-sm">
+            <img src="img/banner.png" class="img-responsive">
+            <div class="btitle">
+                <h1>নানির if-else বুঝে লাফায় নানা</h1></div>
+        </div>
 
     <div class="section1">
         <div class="container nopadding">
@@ -109,10 +111,10 @@
                         ওপরের ইংরেজি লেখাটাকে হালকা মডিফাই করলেই প্রোগ্রামিংয়ে লেখা হয়ে যাবে-</p>
 
                     <pre><code>if (rickshawVara < 30){
-     console.log("rickshaw kore jabo");
+   console.log("rickshaw kore jabo");
 }
 else{
-     console.log("paye hete jabo"); 
+   console.log("paye hete jabo"); 
 }</code></pre>
 
 
@@ -124,10 +126,10 @@ else{
                         চিন্তা। অরিজিনাল প্ল্যান (ভাত খাওয়া) if এর ভিতরে যাবে। আর ব্যাকআপ প্ল্যান (পরোটা খাওয়া) else-এর ভিতরে
                         যাবে। এই ভাত না পরোটার প্রোগ্রামটা নিচের মতো করে লিখবি-</p>
                     <pre><code>if (bhaterPrice < 50){ 
-     console.log("bhat khabo"); 
+   console.log("bhat khabo"); 
 }
 else{ 
-     console.log("porota khabo"); 
+   console.log("porota khabo"); 
 } 
 </code></pre>
 
@@ -150,10 +152,10 @@ else{
                         হলে চাকরি করবি, নাইলে বেকার থাকবি। সেই প্রোগ্রামটা নিচের মতো করে লিখবি- </p>
 
                     <pre><code>if( salary > 30000 ){
-     console.log("chakri korbo");
+   console.log("chakri korbo");
 }
 else{
-     console.log("bekar thakbo");
+   console.log("bekar thakbo");
 }
 </code></pre>
 
@@ -164,10 +166,10 @@ else{
                         Run বাটনে চাপ দিলে আউটপুট হিসেবে ‘chakri korbo’ দেখাবে।</p>
                     <pre><code>var salary = 35000;
 if( salary > 30000 ){
-     console.log("chakri korbo");
+   console.log("chakri korbo");
 }
 else{
-      console.log("bekar thakbo");
+   console.log("bekar thakbo");
 }
 </code></pre>
 
@@ -206,10 +208,10 @@ else{
 var isChatri = true; 
  
 if (beton > 6000 && isChatri == true){
- console.log("kopal khule gese");
+   console.log("kopal khule gese");
 }
 else{ 
- console.log("fokira marka tiutioni"); 
+   console.log("fokira marka tiutioni"); 
 } 
 </code></pre>
 
@@ -231,10 +233,10 @@ else{
 var isChatri = true; 
  
 if (beton > 4000|| isChatri == true){
-    console.log("kopal khule gese");
+   console.log("kopal khule gese");
 }
 else{ 
-     console.log("fokira marka tiutioni"); 
+   console.log("fokira marka tiutioni"); 
 } 
 </code></pre>
                             <p>তোর ঘাড় ত্যাড়া ফ্রেন্ডের দুইটা শর্ত পূরণ করতে যেখানে && চিহ্ন দিছিলি, সেখানে মগা ফ্রেন্ডের দুইটা
@@ -262,10 +264,10 @@ else{
 var khichuriPrice = 120;
 
 if(biriyaniPrice < khichuriPrice){
- console.log("I will eat biriyani");
+   console.log("I will eat biriyani");
 }
 else{ 
- console.log("I will eat khichuri");
+   console.log("I will eat khichuri");
 }
 </code></pre>
 
@@ -281,7 +283,7 @@ else{
                             <pre> <code>var ticketPrice = 115;
 
 if( ticketPrice < 100 ){
- console.log("stadium e khela dekhbo");
+   console.log("stadium e khela dekhbo");
 }
 </code></pre>
 
@@ -303,55 +305,82 @@ if( ticketPrice < 100 ){
                                         <td>
                                             <strong>ছোট</strong>
                                         </td>
-                                        <td> <span>
-                                            <</span></td>
-                                                <td><span>rickshawVara
-                                                    < 50</span></td>
+                                        <td>
+                                            <span>
+                                                <</span>
+                                        </td>
+                                        <td>
+                                            <span>rickshawVara
+                                                < 50</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <strong>বড়</strong>
                                         </td>
-                                        <td><span>></span></td>
-                                        <td><span>salary > 30000</span></td>
+                                        <td>
+                                            <span>></span>
+                                        </td>
+                                        <td>
+                                            <span>salary > 30000</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <strong>বড় বা সমান</strong>
                                         </td>
-                                        <td><span>>=</span></td>
-                                        <td><span>age >= 18</span></td>
+                                        <td>
+                                            <span>>=</span>
+                                        </td>
+                                        <td>
+                                            <span>age >= 18</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <strong>ছোট বা সমান</strong>
                                         </td>
-                                        <td><span>
-                                            <=</span></td>
-                                                <td><span>burgerPrice
-                                                    <=1 00</span> </td>
+                                        <td>
+                                            <span>
+                                                <=</span>
+                                        </td>
+                                        <td>
+                                            <span>burgerPrice
+                                                <=1 00</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <strong>সমান সমান</strong>
                                         </td>
-                                        <td><span>==</span> </td>
-                                        <td><span>weight == 10</span>
+                                        <td>
+                                            <span>==</span>
+                                        </td>
+                                        <td>
+                                            <span>weight == 10</span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <strong>প্রথম শর্ত ও দ্বিতীয় শর্ত</strong>
                                         </td>
-                                        <td><span>&&</span></td>
-                                        <td><span>beton > 6000 && isChatri == true</span></td>
+                                        <td>
+                                            <span>&&</span>
+                                        </td>
+                                        <td>
+                                            <span>beton > 6000 && isChatri == true</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <strong>প্রথম শর্ত অথবা দ্বিতীয় শর্ত</strong>
                                         </td>
-                                        <td><span>false</span></td>
-                                        <td><span>beton > 4000|| isChatri == true</span> </td>
+                                        <td>
+                                            <span>false</span>
+                                        </td>
+                                        <td>
+                                            <span>beton > 4000|| isChatri == true</span>
+                                        </td>
                                     </tr>
 
                                 </tbody>
@@ -373,12 +402,12 @@ if( ticketPrice < 100 ){
                             </div> -->
                                 </div>
                                 <div class="col-xs-11">
-                                        <h1>সত্য হলে অরিজিনাল প্ল্যান, মিথ্যা হলে ব্যাকআপ প্ল্যান</h1>
+                                    <h1>সত্য হলে অরিজিনাল প্ল্যান, মিথ্যা হলে ব্যাকআপ প্ল্যান</h1>
                                 </div>
                             </div>
                 </div>
 
-                <div class="nav1">
+                <div class="nav1 insec">
                     <div class="col-xs-4 noleft noright">
                         <div class="prev">
                             <a href="string.html">
@@ -398,6 +427,38 @@ if( ticketPrice < 100 ){
                                 </span>
                             </a>
                         </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="qu insec">
+                        <div class="row text-center chapter-title">
+                            <h1>
+                                <span class="chapter-title-main">নিজে নিজে কর </span>
+                            </h1>
+                        </div>
+    
+                        <div class="row">
+                            <div class="question-sub-title">
+                                <small class="question-help">প্রত্যেকটা প্রশ্নের উত্তর নিচে কমেন্ট কর। প্রথমে নিজে নিজে চেষ্টা কর। না পারলে অন্যদের কমেন্ট
+                                    দেখে চেষ্টা কর। সেটাও করতে না পারলে, কেনো পরতেছস না, সেটা কমেন্ট কর। </small>
+                            </div>
+                        <div class="question-collection">
+                            <section class="question-holder">
+                                <p><span class="question-number">৫.১:</span> “কফির দাম” (coffeePrice) নামে একটা ভেরিয়েবল লিখ এবং কফির দাম যদি 100 টাকা এর কম হলে কফি খাবো না হলে চা খাবো এমন একটা প্রোগ্রাম লিখ।    </p>
+                                <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/ifelse.html#question1" data-numposts="5"></div>         
+                            </section>
+                            <section class="question-holder">
+                                <p><span class="question-number">৫.২:</span>  পকেটে 5000 টাকার বেশি বা সমান থাকলে কক্সবাজার যাবো আর না হলে আশুলিয়ায় যাবো সেরকম একটা প্রোগ্রাম লিখ।</p>
+                                <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/ifelse.html#question2" data-numposts="5"></div>
+                            </section>
+                            <section class="question-holder">
+                                <p><span class="question-number">৫.৩:</span>আইসক্রিমের দাম (iceCreamPrice) 50 টাকার কম হলে এবং গরম লাগলে (isHot) আইসক্রিম খাবো, নচেৎ ফিল্টারড পানি খাবো, এমন একটা প্রোগ্রাম লিখ।  </p>
+                                <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/ifelse.html#question3" data-numposts="5"></div>
+                            </section>
+                        </div>		
                     </div>
                 </div>
 
@@ -424,7 +485,7 @@ if( ticketPrice < 100 ){
                                 <a href="programming.html">
                                     <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>প্রোগ্রামিং প্রাক্টিস করে রাত পোহালে</a>
+                                    </span>প্রোগ্রামিং প্র্যাকটিস করে রাত পোহালে</a>
                             </li>
                             <li>
                                 <a href="string.html">
@@ -486,7 +547,13 @@ if( ticketPrice < 100 ){
                                 <a href="bijoy.html">
                                     <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>হাসবে হাব্লু বিজয় মিছিলে </a>
+                                    </span>হাসবে হাবলু বিজয় মিছিলে </a>
+                            </li>
+                            <li>
+                                <a href="deleted-scene.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>Deleted Scene</a>
                             </li>
                         </ul>
                     </div>
@@ -513,7 +580,7 @@ if( ticketPrice < 100 ){
                 </div>
 
                 <div class="rightb">
-                    <h1 class="heading">হাবলুদের জন্য প্রোগ্রামিং</h1>
+                    <h1 class="heading">হাবলু কপি কালেক্ট করো</h1>
                     <div class="book">
                         <img src="img/book3.png" class="img-responsive book3">
                         <a href="https://www.rokomari.com/book/112222/">
@@ -523,7 +590,7 @@ if( ticketPrice < 100 ){
                 </div>
 
                 <div class="rightb">
-                    <h1 class="heading">হতে চাইলে বলদ টু বস</h1>
+                    <h1 class="heading">বলদ টু বস কালেক্ট করো</h1>
                     <div class="book2">
                         <img src="img/bolod-to-boss-book.png" class="img-responsive book3">
                         <a href="https://www.rokomari.com/book/128993/">
@@ -566,6 +633,26 @@ if( ticketPrice < 100 ){
     <script>
         hljs.initHighlightingOnLoad();
     </script>
+        <script>
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40601505-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40601505-5');
+</script>
+
 
 </body>
 

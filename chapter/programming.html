@@ -12,7 +12,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
-    <link href="css/xcode.css" rel="stylesheet">  
+    <link href="css/xcode.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="../img/favicon.png" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -45,7 +45,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="../index.html">
                             <img src="img/logo.PNG">
                         </a>
                     </div>
@@ -83,9 +83,11 @@
         </div>
     </header>
 
-    <div class="banner">
-        <img src="img/banner.png" class="img-responsive">
-    </div>
+    <div class="banner .visible-xs-block, hidden-xs .btitle: .visible-sm-block, hidden-sm">
+            <img src="img/banner.png" class="img-responsive">
+            <div class="btitle">
+                <h1>প্রোগ্রামিং প্র্যাকটিস করে রাত পোহালে</h1></div>
+        </div>
 
     <div class="section1">
         <div class="container nopadding">
@@ -170,7 +172,7 @@
                         লাগবে না। কারণ তুই chalerDam ভ্যারিয়েবলটা আগেই ডিক্লেয়ার করে ফেলছস। জাস্ট নিচের মতো লিখে Run বাটনে
                         চাপ দিবি- </p>
 
-                        <pre><code>chalerDam = 29;</code></pre>
+                    <pre><code> chalerDam = 29;</code></pre>
 
                     <p>আরেকটা কথা, প্রোগ্রামিংয়ের প্রত্যেক লাইনের শেষে একটা সেমিকোলন দেওয়া লাগে। আমরা যেমন ইংরেজি লিখলে প্রতিটি
                         লাইনের শেষে ফুলস্টপ দিই। বাংলা লিখলে প্রতি লাইনের শেষে দাঁড়ি দিই। একইভাবে প্রোগ্রামিংয়ে সব লাইনের
@@ -181,8 +183,9 @@
                         পারবি। যেহেতু dalerDam ভ্যারিয়েবলটা প্রথমবার লিখতেছস অর্থাৎ ডিক্লেয়ার করতেছস, সেহেতু তার নামের আগে
                         var লিখে নিবি। এখন প্রোগ্রামিং করার জন্য </p>
 
-                    <p> <a href="www.jhankarmahbub.com/console-">www.jhankarmahbub.com/console-</a>এ যেতে পারস অথবা www.habluderAdda.com/console-এ গিয়েও প্রোগ্রামিং করতে
-                        পারস। দুইটার যেকোনো জায়গায় গিয়ে নিচের মতো লেখ- </p>
+                    <p>
+                        <a href="www.jhankarmahbub.com/console-">www.jhankarmahbub.com/console-</a>এ যেতে পারস অথবা www.habluderAdda.com/console-এ গিয়েও প্রোগ্রামিং
+                        করতে পারস। দুইটার যেকোনো জায়গায় গিয়ে নিচের মতো লেখ- </p>
 
                     <pre><code> var dalerDam = 20;</code></pre>
                     <p>তুই চাইলে dalerDam ভেরিয়েবলের মান আউটপুট হিসেবে দেখতে পারস। জাস্ট dalerDam লিখে Run বাটনে চাপ দিবি। তখন
@@ -194,27 +197,28 @@
                         একটা ইংরেজি শব্দ। যার মানে অন্তর্ভুুক্ত করা। তাই console.log বলতে কোনো কিছু লিখে রাখা বা ধরে রাখা
                         বোঝায়। এত কিছু কঠিন মনে হলে, শুধু মনে রাখবি console.log মানে কোনো কিছু আউটপুট হিসেবে দেখা। যেমন,
                         dalerDam আউটপুট হিসেবে দেখতে চাইলে নিচের মতো করে লিখবি। </p>
-                    <pre><code>console.log(dalerDam);</code></pre>
+                    <pre><code> console.log(dalerDam);</code></pre>
                     <p>তারপর Run বাটনে চাপ দিলে ডালের দাম আউটপুট হিসেবে দেখাবে। </p>
 
                     <h2>খরচের পাখনা</h2>
                     <p>এখন চাল আর ডাল কেনার পরে তোর মনে প্রশ্ন জাগল, দোকানদারকে মোট কত টাকা দিতে হবে? যেহেতু তুই শুধু চাল আর
                         ডাল কিনছস, সেহেতু তোকে চালের দাম আর ডালের দাম যোগ করলে মোট যত টাকা হবে, সেই পরিমাণ টাকা দোকানদারকে
                         দিতে হবে। এখন মোট কত টাকা দিতে হবে, সেটা জানার জন্য নিচের মতো লিখে Run বাটনে চাপ দিবি। </p>
-                    <pre><code>console.log(chalerDam + dalerDam);</code></pre> 
+                    <pre><code> console.log(chalerDam + dalerDam);</code></pre>
                     <p>আউটপুট দেখাবে 49। কারণ চালের দাম 29 টাকা আর ডালের দাম 20 টাকা। দুইটা মিলে মোট 49 টাকা হয়। এখন ডালের দাম
                         বাড়িয়ে 25 টাকা করতে পারস। জাস্ট নিচের মতো লিখে Run-এ চাপ দিবি। </p>
-                    <pre><code>dalerDam = 25;</code></pre>
+                    <pre><code> dalerDam = 25;</code></pre>
 
                     <p>ডালের দাম পরিবর্তন করার পরে, চালের দাম আর ডালের দাম দুইটা মিলে কত হয় দেখতে চাইলে নিচের মতো লিখবি</p>
                     <pre><code> console.log(chalerDam + dalerDam);</code></pre>
                     <p>তারপর Run বাটনে চাপ দিলে আউটপুট হিসেবে 54 দেখাবে। কারণ ডালের দাম বেড়ে 25 টাকা হয়ে গেছে আর চালের দাম আগের
                         সমান 29 টাকা আছে। দুইটা মিলে একসাথে 54 টাকা হয়। </p>
                     <h2>প্রোগ্রামের দে দৌড় </h2>
-                    <p>কোনোকিছু লিখে <a href="www.jhankarmahbub.com/console-">www.jhankarmahbub.com/console-</a>এ Run বাটনে চাপ দিলে নিচে দুইটা লাইন লেখা দেখায়। প্রথম লাইনে
-                        দেখায় কী প্রোগ্রাম লিখছস আর তার নিচের লাইনে দেখায় আউটপুট। যেমন, console.log(dalerDam); লিখে Run বাটনে
-                        চাপ দিলে প্রথম লাইনে দেখাবে console.log(dalerDam), যেটা তুই লিখছস। আর তার নিচের লাইনে দেখাবে 25,
-                        যেটা হচ্ছে প্রোগ্রামের আউটপুট। </p>
+                    <p>কোনোকিছু লিখে
+                        <a href="www.jhankarmahbub.com/console-">www.jhankarmahbub.com/console-</a>এ Run বাটনে চাপ দিলে নিচে দুইটা লাইন লেখা দেখায়। প্রথম লাইনে দেখায়
+                        কী প্রোগ্রাম লিখছস আর তার নিচের লাইনে দেখায় আউটপুট। যেমন, console.log(dalerDam); লিখে Run বাটনে চাপ
+                        দিলে প্রথম লাইনে দেখাবে console.log(dalerDam), যেটা তুই লিখছস। আর তার নিচের লাইনে দেখাবে 25, যেটা
+                        হচ্ছে প্রোগ্রামের আউটপুট। </p>
                     <p>অনেক সময় কোনো আউটপুট না থাকলে সে বলবে আউটপুট ঠিক করা হয় নাই। অর্থাৎ আউটপুট ডিফাইন করা হয় নাই, তাই আউটপুট
                         আনডিফাইনড (undefined)। যেমন, var chalerDam = 28 লিখে Run বাটনে চাপ দিছিলি, তখন তুই একটা মান সেট করতে
                         চাইছস কিন্তু কোনো আউটপুট দেখতে চাস নাই। তাই আউটপুট undefined দেখাবে। </p>
@@ -233,7 +237,7 @@
 
                 </div>
 
-                <div class="nav1">
+                <div class="nav1 insec">
                     <div class="col-xs-4 noleft noright">
                         <div class="prev">
                             <a href="variable.html">
@@ -254,10 +258,41 @@
                             </a>
                         </div>
                     </div>
+                                        
                 </div>
 
 
+                    <div class="qu insec">
+                            <div class="row text-center chapter-title">
+                                <h1>
+                                    <span class="chapter-title-main">নিজে নিজে কর </span>
+                                </h1>
+                            </div>
+        
+                            <div class="row">
+                                <div class="question-sub-title">
+                                    <small class="question-help">প্রত্যেকটা প্রশ্নের উত্তর নিচে কমেন্ট কর। প্রথমে নিজে নিজে চেষ্টা কর। না পারলে অন্যদের কমেন্ট
+                                        দেখে চেষ্টা কর। সেটাও করতে না পারলে, কেনো পরতেছস না, সেটা কমেন্ট কর। </small>
+                                </div>
+                            <div class="question-collection">
+                                <section class="question-holder">
+                                    <p><span class="question-number">৩.১:</span> কলার দাম (kolarDam) নামে একটা ভেরিয়েবল ডিক্লেয়ার কর এবং সেটার মান সেট কর।  </p>
+                                    <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/propose.html#question1" data-numposts="5"></div>         
+                                </section>
+                                <section class="question-holder">
+                                    <p><span class="question-number">৩.২:</span> পাউরুটির দাম (breadPrice) নামে আরেকটা ভেরিয়েবল ডিক্লেয়ার কর এবং সেটার মান সেট কর।</p>
+                                    <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/propose.html#question3" data-numposts="5"></div>
+                                </section>
+                                <section class="question-holder">
+                                    <p><span class="question-number">৩.৩:</span> এখন কলার দাম আর পাউরুটির দাম মিলে কত টাকা হয় সেটা console.log লিখে আউটপুট হিসেবে দেখা। </p>
+                                    <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/propose.html#question2" data-numposts="5"></div>
+                                </section>
+                            </div>			
+                        </div>
+                    </div>
             </div>
+
+
             <div class="col-md-4">
                 <div class="chapter">
                     <h1 class="heading">Chapters</h1>
@@ -277,9 +312,11 @@
                             </li>
                             <li style="background-color: #fbfbfb;box-shadow: 0px 5px 5px 1px #dfdfdf;">
                                 <a href="programming.html">
-                                        <span style="color:#ff7b62;">
-                                                <i class="fa fa-book" aria-hidden="true"></i>
-                                            </span><span style="    font-size: 17px; color:#ff7b62;">প্রোগ্রামিং প্রাক্টিস করে রাত পোহালে</span> </a>
+                                    <span style="color:#ff7b62;">
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>
+                                    <span style="    font-size: 17px; color:#ff7b62;">প্রোগ্রামিং প্র্যাকটিস করে রাত পোহালে</span>
+                                </a>
                             </li>
                             <li>
                                 <a href="string.html">
@@ -339,7 +376,13 @@
                                 <a href="bijoy.html">
                                     <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>হাসবে হাব্লু বিজয় মিছিলে </a>
+                                    </span>হাসবে হাবলু বিজয় মিছিলে </a>
+                            </li>
+                            <li>
+                                <a href="deleted-scene.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>Deleted Scene</a>
                             </li>
                         </ul>
                     </div>
@@ -366,7 +409,7 @@
                 </div>
 
                 <div class="rightb">
-                    <h1 class="heading">হাবলুদের জন্য প্রোগ্রামিং</h1>
+                    <h1 class="heading">হাবলু কপি কালেক্ট করো</h1>
                     <div class="book">
                         <img src="img/book3.png" class="img-responsive book3">
                         <a href="https://www.rokomari.com/book/112222/">
@@ -376,7 +419,7 @@
                 </div>
 
                 <div class="rightb">
-                    <h1 class="heading">হতে চাইলে বলদ টু বস</h1>
+                    <h1 class="heading">বলদ টু বস কালেক্ট করো</h1>
                     <div class="book2">
                         <img src="img/bolod-to-boss-book.png" class="img-responsive book3">
                         <a href="https://www.rokomari.com/book/128993/">
@@ -421,6 +464,26 @@
     <script>
         hljs.initHighlightingOnLoad();
     </script>
+        <script>
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40601505-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40601505-5');
+</script>
+
 
 
 </body>

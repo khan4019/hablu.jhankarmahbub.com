@@ -45,7 +45,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="../index.html">
                             <img src="img/logo.PNG">
                         </a>
                     </div>
@@ -81,9 +81,11 @@
         </div>
     </header>
 
-    <div class="banner">
-        <img src="img/banner.png" class="img-responsive">
-    </div>
+    <div class="banner .visible-xs-block, hidden-xs .btitle: .visible-sm-block, hidden-sm">
+            <img src="img/banner.png" class="img-responsive">
+            <div class="btitle">
+                <h1>দ্বিগুণ টাকা ধার করে পালালে</h1></div>
+        </div>
 
     <div class="section1">
         <div class="container nopadding">
@@ -232,7 +234,7 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                     <h2>কত সেকেন্ডে কত ঘণ্টা </h2>
                     <p>একটা ফাংশনের ভিতরে চাইলে একাধিক কাজও করতে পারস। ধর, তুই একটা ফাংশন লিখতে চাস। যেটাতে ইনপুট হিসেবে নিবি
                         সেকেন্ড (seconds) তারপর সে বলে দিবে কত ঘণ্টা হয়। এই ফাংশনের নাম দিলি সেকেন্ড টু ঘণ্টা (secondsToHours)|
-                        </p>
+                    </p>
 
                     <p>এই ফাংশনের ভিতরে প্রথমেই মিনিট (minutes) নামে একটা ভ্যারিয়েবল ডিক্লেয়ার করবি যার মান হবে সেকেন্ডকে 60
                         দিয়ে ভাগ করলে ভাগফল যত হয়। কারণ সেকেন্ডকে 60 দিয়ে ভাগ করলে মিনিট পাওয়া যায়। তার পরের লাইনে মিনিটকে
@@ -248,17 +250,18 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
 </code></pre>
 
                     <p>এখন secondToHours ফাংশনকে 7200 ইনপুট দিয়ে কল করলে আউটপুট হিসেবে 2 দিবে। কারণ 7200 সেকেন্ডে দুই ঘণ্টা
-                        হয়।</p>
+                        হয়।
+                    </p>
 
                     <div class="instruct">
                         <div class="col-xs-11">
-                                <h1>প্রোগ্রামকে ছোট ছোট function-এ ভাগ করাই প্রোগ্রামারের কাজ
-                                </h1>
+                            <h1>প্রোগ্রামকে ছোট ছোট function-এ ভাগ করাই প্রোগ্রামারের কাজ
+                            </h1>
                         </div>
                     </div>
                 </div>
 
-                <div class="nav1">
+                <div class="nav1 insec">
                     <div class="col-xs-4 noleft noright">
                         <div class="prev">
                             <a href="">
@@ -303,7 +306,7 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                                 <a href="programming.html">
                                     <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>প্রোগ্রামিং প্রাক্টিস করে রাত পোহালে</a>
+                                    </span>প্রোগ্রামিং প্র্যাকটিস করে রাত পোহালে</a>
                             </li>
                             <li>
                                 <a href="string.html">
@@ -363,7 +366,13 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                                 <a href="bijoy.html">
                                     <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>হাসবে হাব্লু বিজয় মিছিলে </a>
+                                    </span>হাসবে হাবলু বিজয় মিছিলে </a>
+                            </li>
+                            <li>
+                                <a href="deleted-scene.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>Deleted Scene</a>
                             </li>
                         </ul>
                     </div>
@@ -390,7 +399,7 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                 </div>
 
                 <div class="rightb">
-                    <h1 class="heading">হাবলুদের জন্য প্রোগ্রামিং</h1>
+                    <h1 class="heading">হাবলু কপি কালেক্ট করো</h1>
                     <div class="book">
                         <img src="img/book3.png" class="img-responsive book3">
                         <a href="https://www.rokomari.com/book/112222/">
@@ -400,7 +409,7 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                 </div>
 
                 <div class="rightb">
-                    <h1 class="heading">হতে চাইলে বলদ টু বস</h1>
+                    <h1 class="heading">বলদ টু বস কালেক্ট করো</h1>
                     <div class="book2">
                         <img src="img/bolod-to-boss-book.png" class="img-responsive book3">
                         <a href="https://www.rokomari.com/book/128993/">
@@ -445,6 +454,26 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
+        <script>
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40601505-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40601505-5');
+</script>
+
 
 </body>
 

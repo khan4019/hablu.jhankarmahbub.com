@@ -105,10 +105,36 @@ header .navbar-nav>li:first-child {
     padding: 5px 0;
 }
 
+.banner{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.btitle {
+    position: absolute;
+    top: 46%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+.btitle h1{
+    font-size: 54px;
+    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #73b5f8, -3px 6px 1px #00579e;
+    text-align: center;
+    line-height: 1.3;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    /* text-shadow: 5px 3px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1); */
+   /*  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #333333, -2px 4px 1px #007fff; */
+    font-family: kalpurush;
+}
+
 .banner img {
     margin: 0 auto;
     width: 100%;
 }
+
 
 .section1 {
     float: left;
@@ -128,6 +154,7 @@ header .navbar-nav>li:first-child {
 .section1 .insec h1 {
     font-size: 30px;
     font-weight: 600;
+    line-height: 1.3;
     text-align: center;
     color: rgba(255, 83, 51, 0.77);
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -194,23 +221,34 @@ header .navbar-nav>li:first-child {
 }
 .section1 .insec .instruct h2 {
     text-align: left;
-    font-size: 18px;
+    font-size: 22px;
     color: #323232;
+    text-align: center;
     font-family: kalpurush;
     margin: 0;
     padding: 0;
     border: none;
 }
+.section1 .insec .instruct a{
+    color: #ff7b62;
+}
 .section1 .insec .instruct {
     float: left;
     width: 100%;
-    padding: 20px 0;
+    padding: 40px 0px 50px;
 }
+.section1 .nav1{
+    margin: 8px 0px 40px;
+    padding: 20px !important;
+}
+
 .section1 .nav1 a {
     border: 2px dotted #d6d6d6;
     padding: 10px;
     display: inline-block;
-    color: #6c787b;
+    font-weight: 700;
+    background-color: #f8f8f8f8;
+    color: #797979;
     font-family: SiyamRupali-ANSI;
     font-size: 16px;
     transition: all 0.3s ease-in;
@@ -424,6 +462,45 @@ footer p {
     display: block !important;
 }
 
+.section1 .qu {
+    float: left;
+    width: 100%;
+    padding: 0 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.question-holder {
+    border-radius: 10px;
+    border: 3px solid rgb(195, 216, 255);
+    background: #f8f8f8;
+    padding: 15px 25px 5px 25px;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+.chapter-title span {
+    font-size: 20px;
+    font-weight: 700;
+}
+.chapter-title-main {
+    color: #00B6E0;
+    margin: 0px;
+}
+
+.chapter-title-rest {
+    color: #F19621;
+}
+
+.question-sub-title{
+    padding: 20px;
+}
+.question-help{
+    font-size: 15px
+}
+
+.chapter-title span {
+    font-size: 20px;
+    font-weight: 700;
+}
 
 
 table {

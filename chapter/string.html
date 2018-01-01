@@ -12,8 +12,8 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
-    <link href="css/xcode.css" rel="stylesheet">  
-    <link rel="icon" type="image/png" href="../img/favicon.png"/>
+    <link href="css/xcode.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
@@ -45,7 +45,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="../index.html">
                             <img src="img/logo.PNG">
                         </a>
                     </div>
@@ -60,18 +60,18 @@
                             </li>
                             <li>
                                 <a href="http://www.jhankarmahbub.com/tips/" target="_blank">tips </a>
-                            <li>
-                                <a href="http://www.jhankarmahbub.com/web/basic/" target="_blank">web </a>
-                            </li>
-                            <li>
-                                <a href="http://www.jhankarmahbub.com/dreamJob/" target="_blank">dream job </a>
-                            </li>
-                            <li>
-                                <a href="https://www.rokomari.com/book/author/40266/" target="_blank">Books </a>
-                            </li>
-                            <li>
-                                <a href="http://www.jhankarmahbub.com/jkr/" target="_blank">About Me </a>
-                            </li>
+                                <li>
+                                    <a href="http://www.jhankarmahbub.com/web/basic/" target="_blank">web </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.jhankarmahbub.com/dreamJob/" target="_blank">dream job </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.rokomari.com/book/author/40266/" target="_blank">Books </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.jhankarmahbub.com/jkr/" target="_blank">About Me </a>
+                                </li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -81,9 +81,11 @@
         </div>
     </header>
 
-    <div class="banner">
-        <img src="img/banner.png" class="img-responsive">
-    </div>
+    <div class="banner .visible-xs-block, hidden-xs .btitle: .visible-sm-block, hidden-sm">
+            <img src="img/banner.png" class="img-responsive">
+            <div class="btitle">
+                <h1>String-এর তালে নাচবে গরু গোয়ালে</h1></div>
+        </div>
 
     <div class="section1">
         <div class="container nopadding">
@@ -99,7 +101,7 @@
                     <p>অন্তু ভাবল রিকশাওয়ালার নাম যেহেতু একটা ভ্যারিয়েবল, সেহেতু সে একটা ভ্যারিয়েবল লিখবে। এই ভ্যারিয়েবলের নাম
                         দিল name তারপর
                         <a href="http://www.jhankarmahbub.com/console">jhankarmahbub.com/console</a> এ গিয়ে নিচের মতো লিখে Run বাটনে চাপ দিল। </p>
-                        <pre><code>var name = akbar;</code></pre> 
+                    <pre><code>var name = akbar;</code></pre>
                     <p>সাথে সাথে লাল রঙের লেখা দেখাল, akbar is not defined| এই জিনিস অন্তুর মাথায় ঢুকতেছে না। সে বুঝতে পারতেছে
                         না সমস্যাটা কোথায়। সাথে সাথে সে var chalerDam = 28; লিখে Run বাটনে চাপ দিয়ে দেখল কোনো ভুল দেখায় না।
                         কিন্তু name লিখলে ভুল দেখায়। akbar পরিবর্তন করে asgor বা jafor লিখলেও ভুল দেখায়। </p>
@@ -108,14 +110,14 @@
                     <p>পরদিন বিকালে চা খাওয়ার সময় অন্তু নাম দিয়ে ভ্যারিয়েবল লেখার সমস্যার কথা রাশেদকে জিজ্ঞেস করে। চা শেষ করেই
                         রাশেদ বলে উঠল— ধর, তুই একটা ভ্যারিয়েবল লিখতে চাস, যে ভ্যারিয়েবলের নাম দিলি name। এখন এই ভ্যারিয়েবলের
                         মান akbar হলে নিচের মতো করে লেখা লাগবে— </p>
-                    <pre><code>var name = "akbar"; </code></pre> 
+                    <pre><code>var name = "akbar"; </code></pre>
                     <p>একটা জিনিস খেয়াল করছস? কোনো ভ্যারিয়েবলের মান এক বা একাধিক শব্দ হলে পুরা মানটাকে ডাবল কোটেশন ( "...."
                         ) চিহ্নের মধ্যে রাখতে হবে। কোটেশন মানে ওপরে দেখ, সমান চিহ্নের ডান পাশে পরপর দুইটা খাড়া খাড়া দাগ দেওয়া
                         হইছে। এইটাকে বলে ডাবল কোটেশন (কারণ দাগ দুইটা, একটা না) আবার যখন শেষ হইছে তখনো দুইটা দাগ। অর্থাৎ শুরু
                         হবে ডাবল কোটেশন দিয়ে এবং শেষও হবে ডাবল কোটেশন দিয়ে। </p>
                     <p>এবার তুই আরেকটা ভ্যারিয়েবল ডিক্লেয়ার করলি, যেটার নাম দিলি বাড়ি কই (bariKoi) এবং সেটার মান সেট করলি নিচের
                         মতো করে— </p>
-                        <pre><code>var bariKoi = "chagol naiya"; </code></pre> 
+                    <pre><code>var bariKoi = "chagol naiya"; </code></pre>
 
                     <h2>মনে রেখো আমায়</h2>
                     <p>আরও দুইটা জিনিস সাইড দিয়ে মনে রাখতে হবে। এক. ভ্যারিয়েবলের নাম লেখার সময় নামের দুই পাশে ডাবল কোটেশন দেওয়া
@@ -125,12 +127,12 @@
                         গ্যাপ দেওয়া যাবে।</p>
                     <p>তোর নিজের নাম লিখে ফুটানি দেখানোর জন্য নাম (name) দিয়ে একটা ভ্যারিয়েবল লিখলি। এই ভ্যারিয়েবলের মান সেট
                         করলি তোর সার্টিফিকেটে নাম- মোহাম্মদ গরীব উল্লাহ। তাই তুই লিখলি—</p>
-                        <pre><code>var name = "Mohammad Gorib Ullah"; </code></pre>
+                    <pre><code>var name = "Mohammad Gorib Ullah"; </code></pre>
 
                     <p>কয়দিন পরে তোর বাপের আঙুল ফুলে কলাগাছ হয়ে গেছে। নিয়মিত পোলাও-কোর্মা খেয়ে তুইও নাদুস-নুদুস, গুল্টু-গাল্টু
                         হয়ে গেছস। তাই জাতীয় পরিচয়পত্রে তোর নাম পাল্টিয়ে নতুন নাম রাখা হইছে— মোহাম্মদ ধনীর পোলা। এখন তোর আগের
                         name ভ্যারিয়েবলের মান চেইঞ্জ করার জন্য নিচের মতো করে লিখবি। </p>
-                        <pre><code>name = "Mohammad Dhonir Pola";</code></pre> 
+                    <pre><code>name = "Mohammad Dhonir Pola";</code></pre>
 
                     <h2>একুশে ফেব্রুয়ারির বর্ণমালা </h2>
                     <p>যেসব ভ্যারিয়েবলকে বর্ণের সমষ্টি অথবা এক বা একাধিক শব্দ দিয়ে প্রকাশ করা হয়, তাদের প্রোগ্রামিংয়ের ভাষায়
@@ -183,7 +185,7 @@ var chaKhabi = true;</code></pre>
                     <p>যখন কোনো প্রশ্নের উত্তরে হ্যাঁ বা না বলস, তখনই true এবং false ব্যবহার করে ফেলস। ধর, তোর আম্মু জিজ্ঞেস
                         করল- ‘আজকে ক্লাস আছে?’ তুই চাইলে হ্যাঁ বা না বলে উত্তর দিতে পারবি। আবার একই প্রশ্নের উত্তর হিসেবে
                         true বা false ব্যবহার করতে পারবি। তুই যেমন— </p>
-                    <pre><code>var classAse = true;</code></pre> 
+                    <pre><code>var classAse = true;</code></pre>
                     <div class="instruct">
                         <div class="col-xs-1 noleft">
                             <!--  <div class="hand">
@@ -191,14 +193,14 @@ var chaKhabi = true;</code></pre>
                             </div> -->
                         </div>
                         <div class="col-xs-11">
-                                <h1>String টাইপের মান লিখতে ডাবল কোটেশন লাগে </h1>
+                            <h1>String টাইপের মান লিখতে ডাবল কোটেশন লাগে </h1>
                         </div>
                     </div>
 
 
                 </div>
 
-                <div class="nav1">
+                <div class="nav1 insec">
                     <div class="col-xs-4 noleft noright">
                         <div class="prev">
                             <a href="programming.html">
@@ -217,6 +219,40 @@ var chaKhabi = true;</code></pre>
                                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
                                 </span>
                             </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qu insec">
+                    <div class="row text-center chapter-title">
+                        <h1>
+                            <span class="chapter-title-main">নিজে নিজে কর </span>
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <div class="question-sub-title">
+                            <small class="question-help">প্রত্যেকটা প্রশ্নের উত্তর নিচে কমেন্ট কর। প্রথমে নিজে নিজে চেষ্টা কর। না পারলে অন্যদের কমেন্ট
+                                দেখে চেষ্টা কর। সেটাও করতে না পারলে, কেনো পরতেছস না, সেটা কমেন্ট কর। </small>
+                        </div>
+                        <div class="question-collection">
+                            <section class="question-holder">
+                                <p>
+                                    <span class="question-number">৩.১:</span> কলার দাম (kolarDam) নামে একটা ভেরিয়েবল ডিক্লেয়ার কর এবং সেটার মান সেট কর।
+                                    </p>
+                                <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/propose.html#question1" data-numposts="5"></div>
+                            </section>
+                            <section class="question-holder">
+                                <p>
+                                    <span class="question-number">৩.২:</span> পাউরুটির দাম (breadPrice) নামে আরেকটা ভেরিয়েবল ডিক্লেয়ার কর এবং সেটার মান
+                                    সেট কর।</p>
+                                <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/propose.html#question3" data-numposts="5"></div>
+                            </section>
+                            <section class="question-holder">
+                                <p>
+                                    <span class="question-number">৩.৩:</span> এখন কলার দাম আর পাউরুটির দাম মিলে কত টাকা হয় সেটা console.log লিখে আউটপুট
+                                    হিসেবে দেখা। </p>
+                                <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/propose.html#question2" data-numposts="5"></div>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -243,13 +279,15 @@ var chaKhabi = true;</code></pre>
                                 <a href="programming.html">
                                     <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>প্রোগ্রামিং প্রাক্টিস করে রাত পোহালে</a>
+                                    </span>প্রোগ্রামিং প্র্যাকটিস করে রাত পোহালে</a>
                             </li>
                             <li style="background-color: #fbfbfb;box-shadow: 0px 5px 5px 1px #dfdfdf;">
                                 <a href="string.html">
-                                        <span style="color:#ff7b62;">
-                                                <i class="fa fa-book" aria-hidden="true"></i>
-                                            </span><span style="    font-size: 17px; color:#ff7b62;">String এর তালে নাচবে গরু গোয়ালে</span> </a>
+                                    <span style="color:#ff7b62;">
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>
+                                    <span style="    font-size: 17px; color:#ff7b62;">String এর তালে নাচবে গরু গোয়ালে</span>
+                                </a>
                             </li>
                             <li>
                                 <a href="if-else.html">
@@ -303,7 +341,13 @@ var chaKhabi = true;</code></pre>
                                 <a href="bijoy.html">
                                     <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>হাসবে হাব্লু বিজয় মিছিলে </a>
+                                    </span>হাসবে হাবলু বিজয় মিছিলে </a>
+                            </li>
+                            <li>
+                                <a href="deleted-scene.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>Deleted Scene</a>
                             </li>
                         </ul>
                     </div>
@@ -330,7 +374,7 @@ var chaKhabi = true;</code></pre>
                 </div>
 
                 <div class="rightb">
-                    <h1 class="heading">হাবলুদের জন্য প্রোগ্রামিং</h1>
+                    <h1 class="heading">হাবলু কপি কালেক্ট করো</h1>
                     <div class="book">
                         <img src="img/book3.png" class="img-responsive book3">
                         <a href="https://www.rokomari.com/book/112222/">
@@ -340,7 +384,7 @@ var chaKhabi = true;</code></pre>
                 </div>
 
                 <div class="rightb">
-                    <h1 class="heading">হতে চাইলে বলদ টু বস</h1>
+                    <h1 class="heading">বলদ টু বস কালেক্ট করো</h1>
                     <div class="book2">
                         <img src="img/bolod-to-boss-book.png" class="img-responsive book3">
                         <a href="https://www.rokomari.com/book/128993/">
@@ -385,6 +429,27 @@ var chaKhabi = true;</code></pre>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
+        <script>
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40601505-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40601505-5');
+</script>
+
 
 </body>
 

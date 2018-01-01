@@ -45,7 +45,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="../index.html">
                             <img src="img/logo.PNG">
                         </a>
                     </div>
@@ -82,9 +82,11 @@
         </div>
     </header>
 
-    <div class="banner">
-        <img src="img/banner.png" class="img-responsive">
-    </div>
+    <div class="banner .visible-xs-block, hidden-xs .btitle: .visible-sm-block, hidden-sm">
+            <img src="img/banner.png" class="img-responsive">
+            <div class="btitle">
+                <h1>function বুঝবে না- কোনটা বউ কোনটা শালি</h1></div>
+        </div>
 
     <div class="section1">
         <div class="container nopadding">
@@ -165,14 +167,14 @@
                         কমা দিয়ে দিয়ে লিখতে হবে। ধর, তুই যদি 10 এবং 20 যোগ করতে চাস, তাহলে joogKor নামক function-টাকে নিচের
                         মতো করে ডাক দিবি। কোনো function-কে ডাক দেওয়ার কাজকে প্রোগ্রামিংয়ের ভাষায় function-কে কল করা বলে।
                     </p>
-                    <p>joogKor(10, 20); </p>
+                    <pre><code>joogKor(10, 20);</code></pre>
                     <p>ওপরের মতো করে joogKor নামক function-কে কল করলে joogKor-এর ভিতরে firstNumber-এর মান 10 হবে। কারণ joogKor
                         ফাংশনকে কল করার সময় প্রথমেই 10 দিছস। secondNumber-এর মান 20 হবে। কারণ joogKor ফাংশনকে কল করার সময়
                         সেকেন্ড পজিশনে 20 দিছস। এখন function-এর সেকেন্ড ব্র্যাকেটের ভিতরে, প্রথম লাইনের ডান পাশে আছে firstNumber
-                        + secondNumber । firstNumber-এর মান 10 আর secondNumber-এর মান 20। তাই firstNumber + secondNumber-এর
-                        মান হবে 30।সে জন্য যোগফল (joogFol) ভ্যারিয়েবলের মান হবে 30। তারপর function-এর ভিতরের সেকেন্ড লাইনে
-                        return joogFol; লেখা থাকায় joogFol ভ্যারিয়েবলের মান আউটপুট হিসেবে return করবে। যেহেতু joogFol ভ্যারিয়েবলের
-                        মান 30, সেহেতু আউটপুট হিসেবে 30 পাওয়া যাবে। </p>
+                        + secondNumber । firstNumber-এর মান 10 আর secondNumber-এর মান 20। তাই firstNumber + secondNumber
+                        -এর মান হবে 30। সে জন্য যোগফল (joogFol) ভ্যারিয়েবলের মান হবে 30। তারপর function-এর ভিতরের সেকেন্ড
+                        লাইনে return joogFol; লেখা থাকায় joogFol ভ্যারিয়েবলের মান আউটপুট হিসেবে return করবে। যেহেতু joogFol
+                        ভ্যারিয়েবলের মান 30, সেহেতু আউটপুট হিসেবে 30 পাওয়া যাবে। </p>
                     <p>তুই চাইলে অন্য দুইটা সংখ্যাও যোগ করতে পারস। যেমন, 37 এবং 25 যোগ করতে চাইলে joogKor (37, 25); লিখে Run
                         বাটনে চাপ দিবি। তখন আউটপুট দেখাবে 62 যা 37 ও 25 এর যোগফল। এ ক্ষেত্রে firstNumber-এর মান 37 আর secondNumber-এর
                         মান 25। আবার joogKor (156, 213) লিখলে আউটপুট হিসেবে 369 দেখাবে।</p>
@@ -184,8 +186,8 @@
                         মান। সেকেন্ডে যে মান দিবি, সেটা হবে সেকেন্ড ইনপুট ভ্যারিয়েবলের মান। </p>
 
                     <pre><code>function joogKor(first, second){
- var joogFol = first + second;
- return joogFol; 
+    var joogFol = first + second;
+    return joogFol; 
 }</code></pre>
 
 
@@ -197,7 +199,9 @@ var dalerDam = 20;</code></pre>
 
                     <p>এখন চালের দাম আর ডালের দাম একত্রে কত হয়, সেটা জানার জন্য joogKor নামক function-কে নিচের মতো করে কল করতে
                         পারবি। </p>
-                    <p>joogKor(chalerDam, dalerDam);</p>
+
+                    <pre><code>joogKor(chalerDam, dalerDam);</code></pre>
+
                     <p>ওপরের কোড আউটপুট দেখাবে 48। কারণ চালের দাম ভ্যারিয়েবলের মান 28 টাকা আর ডালের দাম ভ্যারিয়েবলের মান 20
                         টাকা। এই দুইটা যোগ করলে যোগফল 48 টাকা হয়। </p>
 
@@ -217,7 +221,7 @@ var dalerDam = 20;</code></pre>
 
                     <p>এখন 70 আর 50-এর বিয়োগফল বের করার জন্য biyogFol ফাংশনকে নিচের মতো কল করবি। তখন আউটপুট হিসেবে 20 দেখাবে।
                     </p>
-                    <p>biyogKor (70, 50); </p>
+                    <pre><code>biyogKor (70, 50);</code></pre>
 
                     <h2>রয়েল বেঙ্গল ফাংশন </h2>
                     <p>ধর, তুই সুন্দরবন ঘুরতে গিয়ে বনের মধ্যে পথ হারিয়ে রাতের অন্ধকারে বসে আছস। হুট করে তোর সামনে রয়েল বেঙ্গল
@@ -237,13 +241,13 @@ var dalerDam = 20;</code></pre>
 
                     <div class="instruct">
                         <div class="col-xs-11">
-                                <h1>function মানে ঝালমুড়ি মিক্স করা
-                                </h1>
+                            <h1>function মানে ঝালমুড়ি মিক্স করা
+                            </h1>
                         </div>
                     </div>
                 </div>
 
-                <div class="nav1">
+                <div class="nav1 insec">
                     <div class="col-xs-4 noleft noright">
                         <div class="prev">
                             <a href="array-looping.html">
@@ -267,7 +271,38 @@ var dalerDam = 20;</code></pre>
                 </div>
 
 
+                <div class="qu insec">
+                    <div class="row text-center chapter-title">
+                        <h1>
+                            <span class="chapter-title-main">নিজে নিজে কর </span>
+                        </h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="question-sub-title">
+                            <small class="question-help">প্রত্যেকটা প্রশ্নের উত্তর নিচে কমেন্ট কর। প্রথমে নিজে নিজে চেষ্টা কর। না পারলে অন্যদের কমেন্ট
+                                দেখে চেষ্টা কর। সেটাও করতে না পারলে, কেনো পরতেছস না, সেটা কমেন্ট কর। </small>
+                        </div>
+                        <div class="question-collection">
+                            <section class="question-holder">
+                                <p>
+                                    <span class="question-number">১০.১:</span> দুইটা সংখ্যা গুন করার একটা function লিখ। সেই ফাংশনে দুইটা ইনপুট নিবি তারপর
+                                    সেই দুইটা ইনপুটকে গুন করে গুনফল একটা ভেরিয়েবলে রাখবি। শেষমেষ গুনফলটা return করে দিবি।
+                                </p>
+                                <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/function.html#question1" data-numposts="5"></div>
+                            </section>
+                            <section class="question-holder">
+                                <p>
+                                    <span class="question-number">১০.২:</span> তিনটা সংখ্যা যোগ করার একটা ফাংশন লিখ। যেহেতু তিনটা সংখ্যা যোগ করতে চাস,
+                                    সেহেতু তিনটা ইনপুট ভেরিয়েবল নিবি। তারপর ফাংশনের ভিতরে সেই তিনটা ইনপুট ভেরিয়েবল যোগ করবি।
+                                    বাকিটা তোর মাথা খাটিয়ে লিখে ফেল। </p>
+                                <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/function.html#question2" data-numposts="5"></div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="col-md-4">
                 <div class="chapter">
                     <h1 class="heading">Chapters</h1>
@@ -289,7 +324,7 @@ var dalerDam = 20;</code></pre>
                                 <a href="programming.html">
                                     <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>প্রোগ্রামিং প্রাক্টিস করে রাত পোহালে</a>
+                                    </span>প্রোগ্রামিং প্র্যাকটিস করে রাত পোহালে</a>
                             </li>
                             <li>
                                 <a href="string.html">
@@ -351,7 +386,13 @@ var dalerDam = 20;</code></pre>
                                 <a href="bijoy.html">
                                     <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>হাসবে হাব্লু বিজয় মিছিলে </a>
+                                    </span>হাসবে হাবলু বিজয় মিছিলে </a>
+                            </li>
+                            <li>
+                                <a href="deleted-scene.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>Deleted Scene</a>
                             </li>
                         </ul>
                     </div>
@@ -378,7 +419,7 @@ var dalerDam = 20;</code></pre>
                 </div>
 
                 <div class="rightb">
-                    <h1 class="heading">হাবলুদের জন্য প্রোগ্রামিং</h1>
+                    <h1 class="heading">হাবলু কপি কালেক্ট করো</h1>
                     <div class="book">
                         <img src="img/book3.png" class="img-responsive book3">
                         <a href="https://www.rokomari.com/book/112222/">
@@ -388,7 +429,7 @@ var dalerDam = 20;</code></pre>
                 </div>
 
                 <div class="rightb">
-                    <h1 class="heading">হতে চাইলে বলদ টু বস</h1>
+                    <h1 class="heading">বলদ টু বস কালেক্ট করো</h1>
                     <div class="book2">
                         <img src="img/bolod-to-boss-book.png" class="img-responsive book3">
                         <a href="https://www.rokomari.com/book/128993/">
@@ -431,6 +472,26 @@ var dalerDam = 20;</code></pre>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
+        <script>
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40601505-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40601505-5');
+</script>
+
 
 </body>
 

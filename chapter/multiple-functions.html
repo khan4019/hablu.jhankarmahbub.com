@@ -45,7 +45,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="../index.html">
                             <img src="img/logo.PNG">
                         </a>
                     </div>
@@ -81,9 +81,11 @@
         </div>
     </header>
 
-    <div class="banner">
-        <img src="img/banner.png" class="img-responsive">
-    </div>
+    <div class="banner .visible-xs-block, hidden-xs .btitle: .visible-sm-block, hidden-sm">
+            <img src="img/banner.png" class="img-responsive">
+            <div class="btitle">
+                <h1>দ্বিগুণ টাকা ধার করে পালালে</h1></div>
+        </div>
 
     <div class="section1">
         <div class="container nopadding">
@@ -112,8 +114,8 @@
                         জাস্ট একটা ভ্যারিয়েবল ডিক্লেয়ার করে, ডানপাশে কোনো মান না বসিয়ে ফাংশনকে কল করে দিবি। যেমন, দুইগুণ
                         (duiGoon) নামে একটা ভ্যারিয়েবল ডিক্লেয়ার করে নিচের মতো করে লিখলে, duiGoonKor ফাংশনের আউটপুট duiGoon
                         ভ্যারিয়েবলের মান হয়ে যাবে। </p>
-                        
-                       <pre><code>var duiGoon = duiGoonKor (25);</code></pre>
+
+                    <pre><code>var duiGoon = duiGoonKor (25);</code></pre>
 
                     <h2>বুদ্ধির সার ও প্রোগ্রামের ধার</h2>
                     <p>চাল আর ডাল কিনতে মোট যত টাকা লাগে, তার দ্বিগুণ টাকা ধার করার পুরো প্রোগ্রাম লিখতে চাইলে প্রথমেই পুরো
@@ -231,7 +233,7 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                     <h2>কত সেকেন্ডে কত ঘণ্টা </h2>
                     <p>একটা ফাংশনের ভিতরে চাইলে একাধিক কাজও করতে পারস। ধর, তুই একটা ফাংশন লিখতে চাস। যেটাতে ইনপুট হিসেবে নিবি
                         সেকেন্ড (seconds) তারপর সে বলে দিবে কত ঘণ্টা হয়। এই ফাংশনের নাম দিলি সেকেন্ড টু ঘণ্টা (secondsToHours)|
-                        </p>
+                    </p>
 
                     <p>এই ফাংশনের ভিতরে প্রথমেই মিনিট (minutes) নামে একটা ভ্যারিয়েবল ডিক্লেয়ার করবি যার মান হবে সেকেন্ডকে 60
                         দিয়ে ভাগ করলে ভাগফল যত হয়। কারণ সেকেন্ডকে 60 দিয়ে ভাগ করলে মিনিট পাওয়া যায়। তার পরের লাইনে মিনিটকে
@@ -240,24 +242,25 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                         নিচের মতো হবে- </p>
 
                     <pre><code>function secondsToHours (seconds){
- var minutes = seconds / 60;
- var hours = minutes / 60;
- return hours;
+    var minutes = seconds / 60;
+    var hours = minutes / 60;
+    return hours;
 }
 </code></pre>
 
                     <p>এখন secondToHours ফাংশনকে 7200 ইনপুট দিয়ে কল করলে আউটপুট হিসেবে 2 দিবে। কারণ 7200 সেকেন্ডে দুই ঘণ্টা
-                        হয়।</p>
+                        হয়।
+                    </p>
 
                     <div class="instruct">
                         <div class="col-xs-11">
-                                <h1>প্রোগ্রামকে ছোট ছোট function-এ ভাগ করাই প্রোগ্রামারের কাজ
-                                </h1>
+                            <h1>প্রোগ্রামকে ছোট ছোট function-এ ভাগ করাই প্রোগ্রামারের কাজ
+                            </h1>
                         </div>
                     </div>
                 </div>
 
-                <div class="nav1">
+                <div class="nav1 insec">
                     <div class="col-xs-4 noleft noright">
                         <div class="prev">
                             <a href="function.html">
@@ -276,6 +279,57 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
                                 </span>
                             </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="qu insec">
+                    <div class="row text-center chapter-title">
+                        <h1>
+                            <span class="chapter-title-main">নিজে নিজে কর </span>
+                        </h1>
+                    </div>
+
+                    <div class="row">
+                        <div class="question-sub-title">
+                            <small class="question-help">প্রত্যেকটা প্রশ্নের উত্তর নিচে কমেন্ট কর। প্রথমে নিজে নিজে চেষ্টা কর। না পারলে অন্যদের কমেন্ট
+                                দেখে চেষ্টা কর। সেটাও করতে না পারলে, কেনো পরতেছস না, সেটা কমেন্ট কর। </small>
+                        </div>
+                        <div class="question-collection">
+                            <section class="question-holder">
+                                <p>
+                                    <span class="question-number">১১.১:</span> তিন ফুটে এক গজ হয়। নিচে একটা ফাংশন লিখ যেটার নাম দিবি কত গজ (kotoGoj) এবং
+                                    যেটাতে ইনপুট হিসেবে নিবি ফুট আর আউটপুট হিসেবে বলে দিবে কত গজ হয়। অর্থাৎ ভিতরে ইনপুট সংখ্যাটাকে
+                                    তিন দিয়ে ভাগ করে ভাগফলকে একটা ভেরিয়েবলে রাখবি এবং সেই ভেরিয়েবলটা পরের লাইনে রিটার্ন করে
+                                    দিবি। </p>
+                                <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/dhar.html#question1" data-numposts="5"></div>
+                            </section>
+                            <section class="question-holder">
+                                <p>
+                                    <span class="question-number">১১.২:</span>1760 গজে হয় এক মাইল। আরেকটা ফাংশন লিখ যেটার নাম দিবি কত মাইল (kotoMile) যেটাতে
+                                    ইনপুট হিসেবে নিবি গজ আর বলে দিবে, কত মাইল হয়। অর্থাৎ ইনপুটকে 1760 দিয়ে ভাগ করে ভাগফল
+                                    আউটপুট হিসেবে রিটার্ন করে দিবি। </p>
+                                <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/dhar.html#question2" data-numposts="5"></div>
+                            </section>
+                            <section class="question-holder">
+                                <p>
+                                    <span class="question-number">১১.৩:</span> এভারেস্টের উচ্চতা 29029 ফুট হলে এভারেস্ট কত মাইল উঁচু? এইটার বের করার জন্য
+                                    প্রথমেই একটা ভেরিয়েবল ডিক্লেয়ার কর যেটার নাম দিবি ফুট(feet) এবং এর মান হবে এভারেস্টের
+                                    উচ্চতা। তারপর feet ভেরিয়েবল ব্যবহার করে kotoGoj ফাংশনকে কল কর। সেখানে যে আউটপুট পাবি
+                                    সেটা গজ(goj) ভেরিয়েবলে রাখবি। তারপর goj ভেরিয়েবল ব্যবহার করে একটু আগে লেখা kotoMile ফাংশনকে
+                                    কল কর। যে আউটপুট পাবি সেটা মাইল(mile) নামে একটা ভেরিয়েবলে রাখ। এইটাই মাইলে এভারেস্টের
+                                    উচ্চতা। এইটাকে console.log করে দে।</p>
+                                <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/dhar.html#question3" data-numposts="5"></div>
+                            </section>
+                            <section class="question-holder">
+                                <p>
+                                    <span class="question-number">১১.৪:</span> ফুট টু মাইল (feetToMile) নামে একটা ফাংশন ডিক্লেয়ার কর। এই ফাংশনে ফুট (feet)
+                                    নামে একটা ইনপুট নিবি। ফাংশনের ভিতরে প্রথম লাইনে feet কে গজে রূপান্তর করে গজ (goj) নামে
+                                    একটা ভেরিয়েবলে রাখবি। তারপরের লাইনে goj ভেরিয়েবলকে মাইলে রূপান্তর করে মাইল (mile) নামে
+                                    একটা ভেরিয়েবলে রাখবি। সবশেষে mile ভেরিয়েবলটা আউটপুট হিসেবে রিটার্ন করে দিবি।</p>
+                                <div class="fb-comments" width="100%" data-href="http://habluderadda.com/basic/dhar.html#question4" data-numposts="5"></div>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -303,7 +357,7 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                                 <a href="programming.html">
                                     <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>প্রোগ্রামিং প্রাক্টিস করে রাত পোহালে</a>
+                                    </span>প্রোগ্রামিং প্র্যাকটিস করে রাত পোহালে</a>
                             </li>
                             <li>
                                 <a href="string.html">
@@ -349,9 +403,11 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                             </li>
                             <li style="background-color: #fbfbfb;box-shadow: 0px 5px 5px 1px #dfdfdf;">
                                 <a href="multiple-functions.html">
-                                        <span style="color:#ff7b62;">
-                                                <i class="fa fa-book" aria-hidden="true"></i>
-                                            </span><span style="font-size: 17px; color:#ff7b62;">দিগুন টাকা ধার করে পালালে</span> </a>
+                                    <span style="color:#ff7b62;">
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>
+                                    <span style="font-size: 17px; color:#ff7b62;">দিগুন টাকা ধার করে পালালে</span>
+                                </a>
                             </li>
                             <li>
                                 <a href="programming-language.html">
@@ -363,7 +419,13 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                                 <a href="bijoy.html">
                                     <span>
                                         <i class="fa fa-book" aria-hidden="true"></i>
-                                    </span>হাসবে হাব্লু বিজয় মিছিলে </a>
+                                    </span>হাসবে হাবলু বিজয় মিছিলে </a>
+                            </li>
+                            <li>
+                                <a href="deleted-scene.html">
+                                    <span>
+                                        <i class="fa fa-book" aria-hidden="true"></i>
+                                    </span>Deleted Scene</a>
                             </li>
                         </ul>
                     </div>
@@ -389,7 +451,7 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                 </div>
 
                 <div class="rightb">
-                    <h1 class="heading">হাবলুদের জন্য প্রোগ্রামিং</h1>
+                    <h1 class="heading">হাবলু কপি কালেক্ট করো</h1>
                     <div class="book">
                         <img src="img/book3.png" class="img-responsive book3">
                         <a href="https://www.rokomari.com/book/112222/">
@@ -399,7 +461,7 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
                 </div>
 
                 <div class="rightb">
-                    <h1 class="heading">হতে চাইলে বলদ টু বস</h1>
+                    <h1 class="heading">বলদ টু বস কালেক্ট করো</h1>
                     <div class="book2">
                         <img src="img/bolod-to-boss-book.png" class="img-responsive book3">
                         <a href="https://www.rokomari.com/book/128993/">
@@ -444,6 +506,26 @@ var takaPaichi = dharDey(dharLagbe);</code></pre>
     <script>
         hljs.initHighlightingOnLoad();
     </script>
+        <script>
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40601505-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40601505-5');
+</script>
+
 
 </body>
 
