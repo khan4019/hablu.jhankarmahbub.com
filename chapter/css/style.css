@@ -109,6 +109,7 @@ header .navbar-nav>li:first-child {
     position: relative;
     text-align: center;
     color: white;
+    box-shadow: 0px 5px 4px #dddddd;
 }
 .btitle {
     position: absolute;
@@ -244,7 +245,7 @@ header .navbar-nav>li:first-child {
 }
 
 .section1 .nav1 a {
-    border: 1px dotted #d6d6d6;
+    border: 1px solid #d6d6d6;
 
     box-shadow: 1px 2px 0px #e4e4e4;
     padding: 9px 10px 9px 10px;
@@ -288,6 +289,28 @@ header .navbar-nav>li:first-child {
     padding: 0 15px;
     border: 1px solid #ddd;
 }
+.btn {
+    border: none;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.qbox{    float: left;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 1px 20px #cecece;
+    padding: 10px 15px 0;
+    margin-top: 20px;
+    border: 1px solid #ddd;}
+
+.commentbox{
+    padding: 5px 0px 15px;
+}
+
+.info {background-color: #2691dd; box-shadow: 1px 5px 3px #e4e4e4;} /* Blue */
+.info:hover {background: #1f7fc4; color: #fff;     box-shadow: 1px 5px 5px #e4e4e4;}
+
 .section1 .chapter .list1 {
     width: 100%;
     float: left;
