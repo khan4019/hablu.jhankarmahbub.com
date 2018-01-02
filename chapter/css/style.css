@@ -246,7 +246,6 @@ header .navbar-nav>li:first-child {
 
 .section1 .nav1 a {
     border: 1px solid #d6d6d6;
-
     box-shadow: 1px 2px 0px #e4e4e4;
     padding: 9px 10px 9px 10px;
     border-radius: 20px;
@@ -310,6 +309,7 @@ header .navbar-nav>li:first-child {
 
 .info {background-color: #2691dd; box-shadow: 1px 5px 3px #e4e4e4;} /* Blue */
 .info:hover {background: #1f7fc4; color: #fff;     box-shadow: 1px 5px 5px #e4e4e4;}
+.info a{color: #fff; text-decoration: none;}
 
 .section1 .chapter .list1 {
     width: 100%;
