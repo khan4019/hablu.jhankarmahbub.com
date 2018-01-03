@@ -602,14 +602,14 @@ td:last-child {
 }
 
 tr {
-    background: #f9f9f9;
+    background: #ffffff;
 }
 
 tr:nth-child(odd) td {
-    background: #f1f1f1;
-     tr:last-of-type td {
-         box-shadow: inset 0 -1px 0 #fff;
-        }
+    background: #fff; }
+     tr:last-of-type td  {
+    box-shadow: inset 0 -1px 0 #fff;
+    }
 
     tr:last-of-type td:first-child {
         box-shadow: inset 1px -1px 0 #fff;
